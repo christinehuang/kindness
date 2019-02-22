@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&subset=chinese-traditional');
+@import url('https://fonts.googleapis.com/css?family=Spectral:400,500,700');
 
 html, body {
   width: 100%;
@@ -227,12 +228,16 @@ footer{
   vertical-align: middle;
 }
 .light_Banner_container_table_cell h2 {
+  font-family: 'Spectral', serif;
+  font-weight: 700;
   color: #fff;
   text-transform: capitalize;
   font-size: 54px;
-  line-height: 56px;
+  line-height: 75px;
 }
 .light_Banner_container_table_cell h3 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 400;
   font-size: 24px;
   letter-spacing: 2.5px;
 }
@@ -345,7 +350,7 @@ footer{
   animation-delay: -1s; }
 
 
-/*=========================arrow===========================*/
+/*=========================slider arrow===========================*/
 
 .container2 {
   width: 100%;
@@ -396,6 +401,7 @@ footer{
   z-index: 2;
 }
 .content2_txt h2{
+  font-family: 'Spectral', serif;
   line-height: 58px;
   font-size: 3.6em;
   padding: 20px;
@@ -405,12 +411,13 @@ footer{
 .content2_txt h4{
   line-height: 55px;
   font-size: 1.4em;
+  font-weight: 500;
   padding-left: 55px;
   margin-left: 22%;
   letter-spacing: 3px;
 }
 .content2_txt p{
-  line-height: 25px;
+  line-height: 30px;
   font-size: 1em;
   padding-left: 55px;
   margin-left: 22%;
@@ -472,13 +479,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   padding-left: 70px;
 }
 .content3_txt_container p{
-  line-height: 25px;
+  line-height: 30px;
   font-size: 1em;
   letter-spacing: 3px;
   text-align: justify;
   padding-top: 30px;
 }
 .content3_txt_container h2{
+  font-family: 'Spectral', serif;
   font-size: 3.6em;
   line-height: 58px;
 }
