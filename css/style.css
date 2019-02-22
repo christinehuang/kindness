@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
 html, body {
   width: 100%;
   height: 100%;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 body {
@@ -95,10 +98,15 @@ footer{
 .light-icon{
   display: -webkit-inline-flex; /* Safari */
   display: -ms-inline-flex; /* IE10 */
-  display:inline-flex;
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
   width: 12%;
   height: 115px;
   border-left: 1px solid #FFF;
+}
+.light-icon img{
+  padding-left: 20px;
 }
 .light-lan{
   display: block;
@@ -109,6 +117,11 @@ footer{
   color: #FFF;
   text-align: right;
   border-bottom: 1px solid #FFF;
+}
+.light-lan a{
+  color: #FFF;
+  letter-spacing: 3px;
+  font-size: 13px;
 }
 .nav{
   display: block;
@@ -139,13 +152,66 @@ footer{
   width: 100%;
   height: auto;
   color: #FFF;
-  -webkit-transition: .6s; /* Safari */
-  transition: .6s;
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
 }
 .nav a:hover{
   background-color: rgba(255,255,255,.4);
 }
-/*=========================nav===========================*/
+/*=========================desktop light nav===========================*/
+
+#navbar {
+  display: -webkit-flex; /* Safari */
+  display: -ms-flex; /* IE10 */
+  display: flex;
+  justify-content:space-between;
+  flex-direction:row;
+  background-color: #FFF; 
+  position: fixed;
+  top: -70px; 
+  width: 100%;
+  transition: 0.6s; 
+  z-index: 100;
+  box-shadow:0px 5px 12px rgba(0,0,0,0.2);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.navbar_logo{
+  display: -webkit-inline-flex; /* Safari */
+  display: -ms-inline-flex; /* IE10 */
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+}
+/* Style the navbar links */
+.navbar_link a {
+  float: left;
+  font-size: 14px;
+  letter-spacing: 3px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  -webkit-transition: .6s; /* Safari */
+  transition: .6s;
+  text-decoration: none;
+}
+
+.navbar_link a:hover {
+  background-color: #000;
+  color: #FFF;
+}
+.navbar_icon{
+  display: -webkit-inline-flex; /* Safari */
+  display: -ms-inline-flex; /* IE10 */
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+}
+.navbar_icon img{
+  padding-left: 20px;
+}
+/*=========================desktop light scroll navbar===========================*/
 
 .light_Banner_container_table{
   color: #FFF;
