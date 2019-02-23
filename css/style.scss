@@ -37,9 +37,7 @@ a, a:hover, a:focus {
   padding: 0px;
   text-decoration: none;
 }
-a{
-  color: #FFF;
-}
+
 .container {
   width: 85%;
   max-width: 1990px;
@@ -687,21 +685,17 @@ footer hr{
   display: inline-flex;
   justify-content:flex-end;
   align-items:flex-start;
-  color: #999;
+  color: #FFF;
   width: 72%;
   line-height: 45px;
   font-size: 1em;
 }
 .footer_icon{
   margin-top:5px;
-  margin-right: 40px;
-}
-.footer_icon img{
-  margin-left: 16px;
-  opacity: .4;
-}
-.footer_link a{
-  color: #999;
+  img{
+    margin-right:5px;
+    opacity: .5;
+  }
 }
 .footer_copyright{
   display: block;
