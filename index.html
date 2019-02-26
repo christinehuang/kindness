@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>christine Simple jQuery Carousel Slider </title>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
 <body>
@@ -34,7 +33,11 @@
         </div>
         <!--light-menu-->
         <div id="navbar">
-            <div class="navbar_logo"><a href="#"><img src="images/logo-b.svg" alt="logo"></a></div>
+            <div class="navbar_logo"><a href="#">
+                <img id="nav-logo-b" class="nav-logo-b" src="images/logo-b.svg" alt="logo">
+                <img id="nav-logo-w" class="nav-logo-w" src="images/logo-w.svg" alt="logo">
+            </a></div>
+
             <div class="navbar_link">
                 <a href="#">認識我們</a>
                 <a href="#">訂房Go!</a>
@@ -91,7 +94,7 @@
     <section id="section1">
         <div class="container2 content1">
             <div class="content1_img_container">
-                <div class="content1_img_container_row">
+                <div id="section1-pic" class="content1_img_container_row">
                     <img src="images/content1-img1.png" />
                     <img src="images/content1-img1.png" />
                 </div>
@@ -101,24 +104,24 @@
     </section>
     <section>
         <div class="container2 content2">
-            <div class="content2_txt">
+            <div id="section2-txt" class="content2_txt">
                 <h2>Welcome to <br> Kindness Day!</h2>
                 <h4>生活快節奏 旅行慢步調</h4>
                 <p>總是忙於眼晴工作的你，有多久沒有靜下來？當你為生活努力、為目標前進，是時候停下來，把時間留給自己，選擇康橋漫旅，安排一趟愉快的旅行吧。</p>
             </div>
-            <div class="content2_pic">
+            <div id="section2-pic" class="content2_pic">
                 <div class="overlay_light"></div>
                 <img src="images/index-bed.jpeg" alt="">
             </div>
         </div>
     </section>
-    <section>
-        <div class="container content3 clearfix">
-            <div class="content3_pic">
+    <section id="section3" class="container-full content3 clearfix">
+        <div>
+            <div id="section3-pic" class="content3_pic">
                 <img src="images/index-room.png" alt="">
             </div>
             <div class="content3_txt">
-                <div class="content3_txt_container">
+                <div id="section3-txt" class="content3_txt_container">
                     <h2>Rooms!</h2>
                     <p>我們重視旅客的住宿過程，致力於每個細節，提供乾淨的房間、整潔的用餐還境、每問的餐飲。</p>
                     <div class="more-arrow_container">
@@ -142,7 +145,7 @@
         </div>
     </section>
     <!--news-->
-    <section id="news">
+    <section id="section4" class="section4">
         <div class="container">
             <h2>News</h2>
             <div class="news_list">
@@ -166,12 +169,13 @@
                                     </span>
                                 </span>
                             </a>
-                        </div><!--more-arrow-->
+                        </div>
+                        <!--more-arrow-->
                     </div>
                 </div>
-            </div><!--news-list-->
+            </div>
+            <!--news-list-->
             <div class="btn-2"><a href="#">VIEW ALL</a></div>
-
         </div>
     </section>
     <footer class="clearfix">
@@ -198,14 +202,17 @@
             </div>
         </div>
     </footer>
-
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/scrollbar.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+    <script src="js/svgjq.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 </body>
 
 </html>
