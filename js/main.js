@@ -6,7 +6,7 @@ $(document).ready(function(){
   //build a scene
   var ourScene = new ScrollMagic.Scene({
       triggerElement: '#section1-pic',
-      triggerHook: 0.6,
+      triggerHook: 0.7,
       reverse: true
   })
   .setClassToggle('#section1-pic', 'fade-in') //add class to section1-pic
@@ -21,7 +21,7 @@ $(document).ready(function(){
   //build a scene
   var ourScene2 = new ScrollMagic.Scene({
       triggerElement: '#k-bg',
-      triggerHook: 0.2,
+      triggerHook: 0.3,
       reverse: true
   })
   .setClassToggle('#k-bg', 'fade-in') //add class to section1-pic
@@ -93,7 +93,7 @@ $(document).ready(function(){
 //index changing bg
   var ourScene7 = new ScrollMagic.Scene({
       triggerElement: '#section3',
-      triggerHook: 0.1,
+      triggerHook: 0,
       reverse: true
   })
   .setClassToggle('#section3', 'black') //add class to section1-pic
@@ -107,7 +107,7 @@ $(document).ready(function(){
 
   var ourScene8 = new ScrollMagic.Scene({
       triggerElement: '#section3',
-      triggerHook: 0.1,
+      triggerHook: 0,
       reverse: true
   })
   .setClassToggle('#navbar', 'black') //add class to section1-pic
@@ -121,7 +121,7 @@ $(document).ready(function(){
 
   var ourScene9 = new ScrollMagic.Scene({
       triggerElement: '#section3',
-      triggerHook: 0.1,
+      triggerHook: 0,
       reverse: true
   })
   .setClassToggle('#nav-logo-b', 'dis') //add class to section1-pic
@@ -135,7 +135,7 @@ $(document).ready(function(){
 
   var ourScene10 = new ScrollMagic.Scene({
       triggerElement: '#section3',
-      triggerHook: 0.1,
+      triggerHook: 0,
       reverse: true
   })
   .setClassToggle('#nav-logo-w', 'show') //add class to section1-pic
@@ -149,7 +149,7 @@ $(document).ready(function(){
 
   var ourScene11 = new ScrollMagic.Scene({
       triggerElement: '#section3',
-      triggerHook: 0.1,
+      triggerHook: 0,
       reverse: true
   })
   .setClassToggle('#section4', 'black') //add class to section1-pic
@@ -161,6 +161,38 @@ $(document).ready(function(){
   })//this is requires a plugin
   .addTo(controller);
 
+  var ourScene13 = new ScrollMagic.Scene({
+      triggerElement: '#section3',
+      triggerHook: 0,
+      reverse: true
+  })
+  .setClassToggle('#index-1200', 'white') //add class to section1-pic
+  .addIndicators({
+    name: 'changenavbg',
+    colorTrigger: 'red',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
 
+//this is news
+ $('.news_list').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'newsfade',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+  });
 
 });
+
