@@ -1574,7 +1574,9 @@ footer hr {
     font-size: 13px;
     letter-spacing: 2.3px;
 }
-
+.nav1200-lan .active a{
+    color: #FFF;
+}
 .nav1200-lan a:hover {
     color: #FFF;
 }
@@ -1608,6 +1610,18 @@ footer hr {
     transition: all 0.4s ease;
 }
 
+.nav1200-right .active a {
+    color: #FFF;
+    padding-left: 0px;
+    transition: all 0.4s ease;
+}
+.nav1200-right .active a::before {
+    display: inline-block;
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: #FFF;
+}
 .nav1200-right a:hover {
     color: #FFF;
     padding-left: 0px;
@@ -1838,7 +1852,18 @@ footer hr {
     .nav1200-right a {
         padding-left: 0;
     }
-
+    .nav1200-right .active a {
+    color: #FFF;
+    padding-left: 0px;
+    transition: all 0.4s ease;
+    }
+    .nav1200-right .active a::before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #FFF;
+    }
     .nav1200-right a:hover:before {
         width: 30px;
         height: 1px;
