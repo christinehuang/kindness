@@ -488,7 +488,7 @@ h2 {
 }
 
 .tcon-svgchevron {
-    height: 40px;
+    height: 30px;
     width: 40px;
 }
 
@@ -558,16 +558,17 @@ h2 {
 
 .light_kbg {
     width: 25%;
-    height: 750px;
+    height: 130vh;
     display: inline-block;
     position: absolute;
     right: 0;
+    top: 0;
     float: right;
     background-color: #FFF;
-    background-image: url('../images/kbg.png');
+    background-image: url('../images/k-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: top;
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease-out;
@@ -923,6 +924,9 @@ h2 {
     justify-content: flex-start;
     height: 120px;
 }
+.more-arrow_container.dis {
+    display: none;
+}
 
 .the-arrow {
     width: 64px;
@@ -1112,7 +1116,14 @@ h2 {
     justify-content: flex-start;
     height: 40px;
 }
-
+.show{
+    opacity: 0;
+    height: 120px;
+    transition: all 0.6s;
+}
+.more-arrow_container-w.show {
+    opacity: 1;
+}
 .wthe-arrow {
     width: 64px;
     transition: all 0.2s;
@@ -1715,13 +1726,45 @@ footer hr {
     .nav800-icons a:hover img {
         opacity: 1;
     }
+    .news_list {
+    flex-direction: column;
+    }
+    .news-pic {
+    display: block;
+    width: 100%;
+    }
+    .news-info {
+    display: block;
+    width: 100%;
+    margin-top: -2px;
+    border: .5px solid rgba(255, 255, 255, .6);
+    border-top: 0px solid #000;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    .light_menu{
+     height: 80px;
+    }
+    .light-logo{
+        height: 80px;
+    }
+    .hamburger{
+        top:22px;
+    }
+    .light_Banner_container_table_cell h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .light_Banner_container_table_cell h3 img{
+        padding-top: 30px;
+        width: 96px;
+    }
     .light_Banner_container_table_cell span{
         font-size: 14px;
         letter-spacing: 2px;
         line-height: 24px;
+        top: 18vh;
     }
     .content3_txt_container h2{
         font-size: 40px;
@@ -1861,20 +1904,6 @@ footer hr {
     }
     .content3_txt_container {
     padding-left: 0;
-    }
-    .news_list {
-    flex-direction: column;
-    }
-    .news-pic {
-    display: block;
-    width: 100%;
-    }
-    .news-info {
-    display: block;
-    width: 100%;
-    margin-top: -2px;
-    border: .5px solid rgba(255, 255, 255, .6);
-    border-top: 0px solid #000;
     }
     .footer_top {
         flex-direction: column;

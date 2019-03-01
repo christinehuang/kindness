@@ -105,6 +105,32 @@ $(document).ready(function(){
   })//this is requires a plugin
   .addTo(controller);
 
+  var ourScene13 = new ScrollMagic.Scene({
+      triggerElement: '#section3',
+      triggerHook: 0,
+      reverse: true
+  })
+  .setClassToggle('#content3-more-b', 'dis') //add class to section1-pic
+  .addIndicators({
+    name: 'disnone',
+    colorTrigger: '#c90',
+    colorStart: '#F60',
+  })//this is requires a plugin
+  .addTo(controller);
+
+  var ourScene14 = new ScrollMagic.Scene({
+      triggerElement: '#section3',
+      triggerHook: 0,
+      reverse: true
+  })
+  .setClassToggle('#content3-more-w', 'show') //add class to section1-pic
+  .addIndicators({
+    name: 'disshow',
+    colorTrigger: '#c90',
+    colorStart: '#F60',
+  })//this is requires a plugin
+  .addTo(controller);
+
   var ourScene8 = new ScrollMagic.Scene({
       triggerElement: '#section3',
       triggerHook: 0,
