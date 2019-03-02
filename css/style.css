@@ -861,7 +861,7 @@ transform: translateY(0px);
     width: 50%;
     max-height: 295px;
     color: #000;
-    border: .5px solid rgba(0, 0, 0, .5);
+    border: .5px solid rgba(0, 0, 0, .3);
     /*border: .5px solid rgba(255, 255, 255, .6);*/
     /*border-left: 0px solid #000;*/
     margin-left: -1px;
@@ -1794,6 +1794,40 @@ footer hr {
     margin:0 auto; 
 }
 /*=========================about===========================*/
+.pagination{
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    width: 100%;
+    max-width: 400px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 15px;
+}
+.pagination a, .pagination li{
+    display: inline-block;
+}
+.pagination a{
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    padding: 10px 16px;
+    color: #999;
+    margin:0 6px;
+}
+.pagination a:hover{
+    background-color: #CCC;
+    color: #FFF;
+}
+.pagination .active a{
+    background-color: #CCC;
+    color: #FFF;
+}
+/*=========================pagnition===========================*/
 
 @media only screen and (max-width: 1200px) {
     .light_menu {
