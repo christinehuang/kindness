@@ -104,11 +104,11 @@ $(document).ready(function(){
   .addTo(controller);
   });
 
- //this is mask
+ //this is abouttxt
  $('.about-txt').each(function(){
 
     //build a scene
-  var ourScene15 = new ScrollMagic.Scene({
+  var ourScene16 = new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: 0.4,
       reverse: true
@@ -122,6 +122,26 @@ $(document).ready(function(){
   })//this is requires a plugin
   .addTo(controller);
   });
+
+ //this is abouttxt
+ $('.food-bgtxt').each(function(){
+
+    //build a scene
+  var ourScene16 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.7,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'foodbgtxt',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
 
 });
 

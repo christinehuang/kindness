@@ -13,6 +13,7 @@ $(document).on('ready', function() {
         prevArrow: '<div class="slide-arrow prev-arrow"><img src="images/slide-prev.svg" alt=""></div>',
         nextArrow: '<div class="slide-arrow next-arrow"><img src="images/slide-next.svg" alt=""></div>',
         infinite: true,
+        variableWidth: true,
         speed: 300,
         centerMode: true,
         centerPadding: '210px',
@@ -34,7 +35,9 @@ $(document).on('ready', function() {
         {
           breakpoint: 600,
           settings: {
-            centerPadding: '50px',
+            prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
+            nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
+            centerPadding: '0px',
             slidesToShow: 1,
             slidesToScroll: 1
           }
@@ -42,6 +45,8 @@ $(document).on('ready', function() {
         {
           breakpoint: 480,
           settings: {
+            prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
+            nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
             centerPadding: '0px',
             slidesToShow: 1,
             slidesToScroll: 1

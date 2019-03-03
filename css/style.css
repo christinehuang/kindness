@@ -84,106 +84,6 @@ h2 {
 
 /*=========================basic===========================*/
 
-.food-gallery{
-    width: 100%;
-    text-align: center;
-    margin:0px auto;
-    padding-top: 65px;
-    padding-bottom: 120px;
-    background-color: #F0F0F0;
-}
-.food-gallery h2{
-    font-family: 'Spectral', serif;
-    font-weight: 700;
-    font-size: 54px; 
-    padding: 20px 0;
-}
-    .slider {
-        width: 100%;
-        margin: 30px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 40px;
-    }
-
-    .slick-prev {
-    left: 200px!important;
-    z-index: 50;
-    }
-    .slick-next {
-    right: 200px!important;
-    }
-
-    .slick-slide img {
-      width: 100%;
-      max-height: 445px;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: #000!important;
-    }
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-    
-    .slick-active {
-      opacity: 1;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-.counter {
-  position: relative;
-  margin: 0 auto;
-  height: 20px;
-  width: 60px;
-  z-index: 2;
-  text-align: center;
-  color: #0C2340;
-  line-height: 21px;
-  font-size: 16px;
-  opacity: 1;
-  letter-spacing: 2px;
-}
-
-.slide-arrow{
-  position: absolute;
-  top: 50%;
-  margin-top: -55px;
-  cursor: pointer;
-}
-.prev-arrow{
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    left: 180px!important;
-    padding: 22px;
-    z-index: 50;   
-}
-.prev-arrow:hover{
-  left: 170px!important;
-}
-.next-arrow{
-     -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    padding: 22px;
-  right: 180px!important;   
-}
-.next-arrow:hover{
-  right: 170px!important;   
-}
-
-
-/*=========================slide test===========================*/
 .light_menu {
     display: block;
     position: absolute;
@@ -1955,6 +1855,139 @@ footer hr {
 }
 /*=========================pagnition===========================*/
 
+
+.food-gallery{
+    width: 100%;
+    text-align: center;
+    margin:0px auto;
+    padding-top: 65px;
+    padding-bottom: 120px;
+    background-color: #F0F0F0;
+}
+.food-gallery h2{
+    font-family: 'Spectral', serif;
+    font-weight: 700;
+    font-size: 54px; 
+    padding: 20px 0;
+}
+    .slider {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 40px;
+    }
+
+    .slick-prev {
+    left: 200px!important;
+    z-index: 50;
+    }
+    .slick-next {
+    right: 200px!important;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #000!important;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+.counter {
+  position: relative;
+  margin: 0 auto;
+  height: 20px;
+  width: 60px;
+  z-index: 2;
+  text-align: center;
+  color: #0C2340;
+  line-height: 21px;
+  font-size: 16px;
+  opacity: 1;
+  letter-spacing: 2px;
+}
+
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -55px;
+  cursor: pointer;
+}
+.prev-arrow{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 22%!important;
+    padding: 22px;
+    z-index: 50;   
+}
+.prev-arrow:hover{
+  left: 21%!important;
+}
+.next-arrow{
+     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 22px;
+  right: 22%!important;   
+}
+.next-arrow:hover{
+  right: 21%!important;   
+}
+
+
+/*=========================slide gallery===========================*/
+
+.about-txt h2{
+    position: absolute;
+    font-family: 'Spectral', serif;
+    font-weight: 700;
+    font-size: 48px;
+    left: 0;
+    top:30px;
+}
+.food-bgtxt{
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    position: relative;
+    font-family: 'Spectral', serif;
+    font-weight: 700;
+    font-size: 100px;
+    color: #F0F0F0;
+    width: 100%;
+    bottom: -90px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.food-bgtxt.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.food-bgtxt.left{
+    text-align: right;
+}
+/*=========================food====================================*/
+
 @media only screen and (max-width: 1200px) {
     .light_menu {
         display: block;
@@ -2096,6 +2129,34 @@ footer hr {
     }
    .about-right{
     width: 100%;
+    }
+    .prev-arrow{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 10px!important;
+    padding: 22px;
+    z-index: 50;   
+    }
+    .prev-arrow:hover{
+     left: 0px!important;
+    }
+    .next-arrow{
+     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 22px;
+    right: 10px!important;   
+    }
+    .next-arrow:hover{
+    right: 0px!important;   
+    }
+    .food-bgtxt{
+    text-align: justify!important;
+    font-size: 90px;
+    bottom: 20px;
     }
 }
 
@@ -2333,6 +2394,34 @@ footer hr {
     }
     .pagination a {
     margin: 0 5.5px;
+    }
+    .prev-arrow{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 30px!important;
+    padding: 22px;
+    z-index: 50;   
+    }
+    .prev-arrow:hover{
+     left: 20px!important;
+    }
+    .next-arrow{
+     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 22px;
+    right: 30px!important;   
+    }
+    .next-arrow:hover{
+    right: 20px!important;   
+    }
+    .food-bgtxt{
+    text-align: justify!important;
+    font-size: 45px;
+    bottom: 20px;
     }
 }
 
