@@ -123,11 +123,11 @@ $(document).ready(function(){
   .addTo(controller);
   });
 
- //this is abouttxt
+ //this is foodbgtxt
  $('.food-bgtxt').each(function(){
 
     //build a scene
-  var ourScene16 = new ScrollMagic.Scene({
+  var ourScene17 = new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: 0.7,
       reverse: true
@@ -135,6 +135,25 @@ $(document).ready(function(){
   .setClassToggle(this, 'fade-in') //add class to section1-pic
   .addIndicators({
     name: 'foodbgtxt',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ //this is hotel list
+ $('.hotel_list').each(function(){
+
+    //build a scene
+  var ourScene20 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.7,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'hotellist',
     colorTrigger: '#F60',
     colorStart: '#F60',
     colorEnd: 'Pink'
