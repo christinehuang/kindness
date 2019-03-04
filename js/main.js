@@ -63,7 +63,7 @@ $(document).ready(function(){
   .addTo(controller);
 
 
-//index changing bg
+
  
 
 //this is news
@@ -154,6 +154,62 @@ $(document).ready(function(){
   .setClassToggle(this, 'fade-in') //add class to section1-pic
   .addIndicators({
     name: 'hotellist',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ //this is facility-txt
+ $('.facility-txt').each(function(){
+
+    //build a scene
+  var ourScene21 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.6,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'facility-txt',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ //this is icon-ul
+ $('.icon-ul').each(function(){
+
+    //build a scene
+  var ourScene22 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.6,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'icon-ul',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ $('.facility-gallery').each(function(){
+
+    //build a scene
+  var ourScene23 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.6,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'facility-gallery',
     colorTrigger: '#F60',
     colorStart: '#F60',
     colorEnd: 'Pink'
