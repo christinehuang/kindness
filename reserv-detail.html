@@ -8,8 +8,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
-<body>
-    <header>
+<body style="background-color: #000;">
+    <header id="#blackbg">
         <div class="light_menu">
             <div class="menu-container">
                 <div class="light-logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></div>
@@ -18,11 +18,11 @@
                     <nav class="nav">
                         <ul>
                             <li><a href="about.html">認識我們</a></li>
-                            <li><a href="reserv-list.html">訂房Go!</a></li>
+                            <li class="active"><a href="reserv-list.html">訂房Go!</a></li>
                             <li><a href="food.html">餐飲料理</a></li>
                             <li><a href="facility.html">服務設施</a></li>
                             <li><a href="traffic-list.html">交通資訊</a></li>
-                            <li class="active"><a href="news.html">最新消息</a></li>
+                            <li><a href="news.html">最新消息</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,11 +50,11 @@
                             <div class="nav1200-right">
                                 <ul>
                                     <li><a href="about.html"><span>Our Value</span><p>認識我們</p></a></li>
-                                    <li><a href="#"><span>Reservation</span><p>訂房Go!</p></a></li>
+                                    <li class="active"><a href="reserv-list.html"><span>Reservation</span><p>訂房Go!</p></a></li>
                                     <li><a href="food.html"><span>Food & Beverages</span><p>餐飲料理</p></a></li>
                                     <li><a href="facility.html"><span>Facility</span><p>服務設施</p></a></li>
                                     <li><a href="traffic-list.html"><span>Traffic</span><p>交通資訊</p></a></li>
-                                    <li  class="active"><a href="news.html"><span>News</span><p>最新消息</p></a></li>
+                                    <li><a href="news.html"><span>News</span><p>最新消息</p></a></li>
                                 </ul>
                             </div>
                             <div class="nav800-icons">
@@ -75,7 +75,7 @@
                 </a></div>
             <div class="navbar_link">
                 <a href="about.html">認識我們</a>
-                <a href="#">訂房Go!</a>
+                <a href="reserv-list.html">訂房Go!</a>
                 <a href="food.html">餐飲料理</a>
                 <a href="facility.html">服務設施</a>
                 <a href="traffic-list.html">交通資訊</a>
@@ -92,197 +92,182 @@
             </label>
         </div>
         <!--light-scrollnavbar-->
-    </header>
+    </header> 
     <!--slider-->
-    <section class="inside-page-banner">
+    <section class="inside-page-banner blackbg">
         <div class="light_Banner_container_table inside-banner">
             <div class="light_Banner_container_table_cell">
                 
-                <h2>News</h2>
+                <h2>Room</h2>
 
             </div>
         </div>
         <div class="overlay"></div>
-        <div class="inside-banner-contain" style="background-image: url(images/banner2.jpeg);"></div>
+        <div class="inside-banner-contain"></div>
     </section>
     <!--content-->
     
-    <section id="section4" class="section4">
-        <div class="container">
-            <div class="news_list">
-                <div class="news-pic"><a href="#"><img src="images/news-pic.png" alt="news"></a></div>
-                <div class="news-info">
-                    <h3><a href="#">BOOK NOW！超早鳥優惠和明年的自己相約</a></h3>
-                    <p><a href="#">不再舟車勞頓，享受更輕鬆快意的旅程。即日起，完成訂房即可以8折加購高鐵聯票！...</a></p>
-                    <div class="news-info_date_more">
-                        <span class="date">2019.04.02</span>
-                        <div class="more-arrow_container-w">
-                            <a class='animated-arrow' href='#'>
-                                <span class='the-arrow -left'>
-                                    <span class='shaft'></span>
-                                </span>
-                                <span class='main'>
-                                    <span class='text'>
-                                        MORE
-                                    </span>
-                                    <span class='the-arrow -right'>
-                                        <span class='shaft'></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <!--more-arrow-->
-                    </div>
+    <section class="blackbg">
+        <div class="container traffic">
+            <div class="reserv-intro">
+                <h4>康橋慢旅本館</h4>
+                <p>本館設有足夠停車位，最適合家庭旅遊、商務出差。館內環境乾淨，安全便利，隨時為您提供親切貼心的服務，並備有豐盛營養的美味早餐及宵夜服務。</p>
+            </div>
+            <div class="reserv-btn">
+                <div class="btn-group">
+                    <div class="btn-2"><a href="news.html">四方通行線上訂房</a></div>
+                    <p>本訂房系統與四方通行合作</p>
+                </div>
+                <div class="btn-group">
+                    <div class="btn-2"><a href="news.html">tripadvisor</a></div>
+                    <p></p>
                 </div>
             </div>
-            <!--news-list-->
-            <div class="news_list">
-                <div class="news-pic"><a href="#"><img src="images/news-pic2.png" alt="news"></a></div>
-                <div class="news-info">
-                    <h3><a href="#">BOOK NOW！超早鳥優惠和明年的自己相約</a></h3>
-                    <p><a href="#">不再舟車勞頓，享受更輕鬆快意的旅程。即日起，完成訂房即可以8折加購高鐵聯票！...</a></p>
-                    <div class="news-info_date_more">
-                        <span class="date">2019.04.02</span>
-                        <div class="more-arrow_container-w">
-                            <a class='wanimated-arrow' href='#'>
-                                <span class='the-arrow -left'>
-                                    <span class='shaft'></span>
-                                </span>
-                                <span class='main'>
-                                    <span class='text'>
-                                        MORE
-                                    </span>
-                                    <span class='the-arrow -right'>
-                                        <span class='shaft'></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <!--more-arrow-->
-                    </div>
-                </div>
-            </div>
-            <!--news-list-->
-            <div class="news_list">
-                <div class="news-pic"><a href="#"><img src="images/news-pic3.png" alt="news"></a></div>
-                <div class="news-info">
-                    <h3><a href="#">BOOK NOW！超早鳥優惠和明年的自己相約</a></h3>
-                    <p><a href="#">不再舟車勞頓，享受更輕鬆快意的旅程。即日起，完成訂房即可以8折加購高鐵聯票！...</a></p>
-                    <div class="news-info_date_more">
-                        <span class="date">2019.04.02</span>
-                        <div class="more-arrow_container-w">
-                            <a class='animated-arrow' href='#'>
-                                <span class='the-arrow -left'>
-                                    <span class='shaft'></span>
-                                </span>
-                                <span class='main'>
-                                    <span class='text'>
-                                        MORE
-                                    </span>
-                                    <span class='the-arrow -right'>
-                                        <span class='shaft'></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <!--more-arrow-->
-                    </div>
-                </div>
-            </div>
-            <!--news-list-->
-            <div class="news_list">
-                <div class="news-pic"><a href="#"><img src="images/news-pic3.png" alt="news"></a></div>
-                <div class="news-info">
-                    <h3><a href="#">BOOK NOW！超早鳥優惠和明年的自己相約</a></h3>
-                    <p><a href="#">不再舟車勞頓，享受更輕鬆快意的旅程。即日起，完成訂房即可以8折加購高鐵聯票！...</a></p>
-                    <div class="news-info_date_more">
-                        <span class="date">2019.04.02</span>
-                        <div class="more-arrow_container-w">
-                            <a class='animated-arrow' href='#'>
-                                <span class='the-arrow -left'>
-                                    <span class='shaft'></span>
-                                </span>
-                                <span class='main'>
-                                    <span class='text'>
-                                        MORE
-                                    </span>
-                                    <span class='the-arrow -right'>
-                                        <span class='shaft'></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <!--more-arrow-->
-                    </div>
-                </div>
-            </div>
-            <!--news-list-->
-            <div class="news_list">
-                <div class="news-pic"><a href="#"><img src="images/news-pic3.png" alt="news"></a></div>
-                <div class="news-info">
-                    <h3><a href="#">BOOK NOW！超早鳥優惠和明年的自己相約</a></h3>
-                    <p><a href="#">不再舟車勞頓，享受更輕鬆快意的旅程。即日起，完成訂房即可以8折加購高鐵聯票！...</a></p>
-                    <div class="news-info_date_more">
-                        <span class="date">2019.04.02</span>
-                        <div class="more-arrow_container-w">
-                            <a class='animated-arrow' href='#'>
-                                <span class='the-arrow -left'>
-                                    <span class='shaft'></span>
-                                </span>
-                                <span class='main'>
-                                    <span class='text'>
-                                        MORE
-                                    </span>
-                                    <span class='the-arrow -right'>
-                                        <span class='shaft'></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <!--more-arrow-->
-                    </div>
-                </div>
-            </div>
-            <!--news-list-->
-            <div class="news_list">
-                <div class="news-pic"><a href="#"><img src="images/news-pic3.png" alt="news"></a></div>
-                <div class="news-info">
-                    <h3><a href="#">BOOK NOW！超早鳥優惠和明年的自己相約</a></h3>
-                    <p><a href="#">不再舟車勞頓，享受更輕鬆快意的旅程。即日起，完成訂房即可以8折加購高鐵聯票！...</a></p>
-                    <div class="news-info_date_more">
-                        <span class="date">2019.04.02</span>
-                        <div class="more-arrow_container-w">
-                            <a class='animated-arrow' href='#'>
-                                <span class='the-arrow -left'>
-                                    <span class='shaft'></span>
-                                </span>
-                                <span class='main'>
-                                    <span class='text'>
-                                        MORE
-                                    </span>
-                                    <span class='the-arrow -right'>
-                                        <span class='shaft'></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <!--more-arrow-->
-                    </div>
-                </div>
-            </div>
-            <!--news-list-->
-            <div class="pagination">
-             <ul>
-               <li class="active"><a href="#" id="">1</a></li>
-               <li><a href="#">2</a></li>
-               <li><a href="#">3</a></li>
-               <li><a href="#">4</a></li>
-               <li><a href="#">5</a></li>
-             </ul>
-            </div>
-        </div>
+
+        </div><!-- container-->
     </section>
-    
+    <section class="blackbg">
+        <div class="reserv container">
+        <div class="reserv-content clearfix">
+            <div class="reserv-left fadetran-img">
+               <img class="mask2" src="images/reserv-room1.png" alt="">
+            </div>
+            <div class="reserv-middle"></div>
+            <div class="reserv-right">
+                <div class="reserv-txt">
+                    <h4>標準客房</h4> 
+                    <p>我們重視『旅客的住宿過程』，是因為『旅館』是旅程中最重要的時光。致力於降低干擾、營造舒適環境，讓您旅程更平順。</p>
+                    <div class="more-arrow_container-w">
+                            <a class='animated-arrow' href='#'>
+                                <span class='the-arrow -left'>
+                                    <span class='shaft'></span>
+                                </span>
+                                <span class='main'>
+                                    <span class='text'>
+                                        MORE
+                                    </span>
+                                    <span class='the-arrow -right'>
+                                        <span class='shaft'></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--more-arrow-->                    
+                </div>  
+            </div>
+        </div><!--reserv content-->
+        <div class="reserv-content2 clearfix">
+            <div class="reserv-left fadetran-img">
+               <img class="mask2" src="images/reserv-room1.png" alt="">
+            </div>
+            <div class="reserv-middle"></div>
+            <div class="reserv-right">
+                <div class="reserv-txt">
+                    <h4>標準客房</h4> 
+                    <p>我們重視『旅客的住宿過程』，是因為『旅館』是旅程中最重要的時光。致力於降低干擾、營造舒適環境，讓您旅程更平順。</p>
+                    <div class="more-arrow_container-w">
+                            <a class='animated-arrow' href='#'>
+                                <span class='the-arrow -left'>
+                                    <span class='shaft'></span>
+                                </span>
+                                <span class='main'>
+                                    <span class='text'>
+                                        MORE
+                                    </span>
+                                    <span class='the-arrow -right'>
+                                        <span class='shaft'></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--more-arrow-->                    
+                </div>  
+            </div>
+        </div><!--reserv2 content-->
+        <div class="reserv-content clearfix">
+            <div class="reserv-left fadetran-img">
+               <img class="mask2" src="images/reserv-room1.png" alt="">
+            </div>
+            <div class="reserv-middle"></div>
+            <div class="reserv-right">
+                <div class="reserv-txt">
+                    <h4>標準客房</h4> 
+                    <p>我們重視『旅客的住宿過程』，是因為『旅館』是旅程中最重要的時光。致力於降低干擾、營造舒適環境，讓您旅程更平順。</p>
+                    <div class="more-arrow_container-w">
+                            <a class='animated-arrow' href='#'>
+                                <span class='the-arrow -left'>
+                                    <span class='shaft'></span>
+                                </span>
+                                <span class='main'>
+                                    <span class='text'>
+                                        MORE
+                                    </span>
+                                    <span class='the-arrow -right'>
+                                        <span class='shaft'></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--more-arrow-->                    
+                </div>  
+            </div>
+        </div><!--reserv content-->
+        <div class="reserv-content2 clearfix">
+            <div class="reserv-left fadetran-img">
+               <img class="mask2" src="images/reserv-room1.png" alt="">
+            </div>
+            <div class="reserv-middle"></div>
+            <div class="reserv-right">
+                <div class="reserv-txt">
+                    <h4>標準客房</h4> 
+                    <p>我們重視『旅客的住宿過程』，是因為『旅館』是旅程中最重要的時光。致力於降低干擾、營造舒適環境，讓您旅程更平順。</p>
+                    <div class="more-arrow_container-w">
+                            <a class='animated-arrow' href='#'>
+                                <span class='the-arrow -left'>
+                                    <span class='shaft'></span>
+                                </span>
+                                <span class='main'>
+                                    <span class='text'>
+                                        MORE
+                                    </span>
+                                    <span class='the-arrow -right'>
+                                        <span class='shaft'></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--more-arrow-->                    
+                </div>  
+            </div>
+        </div><!--reserv2 content-->
+        
+        
+    </div>    
+    </section>
+    <section class="container-full greybg clearfix reserv-bottom1 blackbg">
+        <div class="reserv-bottom-txt">
+            <h4>住宿須知</h4>
+            <div class="reserv-info-list">
+              <ul>
+                <li>※ 住房附贈自助式中西式早餐服務，另設有素食醬菜（用餐時間7:00AM～10:00AM）<br>※ 本飯店未提供加床服務<br>※ 加人酌收清潔服務費，120cm以上每人NT$300元，120cm以下免費 （費用內含：豐盛早餐、備品）<br>※ 客房電視提供多台頻道可觀看。<br>※ 全館禁止寵物進入、全館禁菸。</li>
+                <li>進房時間：15:00後<br>退房時間：12:00前</li>
+                <li>訂房專線   +886.89.229.226<br>訂房傳真   +886.9.227.200<br>EMAIL   h007.hotel@msa.hinet.net<br>旅館地址   台東市中興路一段209巷16號</li>
+                <li>現場提供刷卡服務</li>
+              </ul>
+            </div>
+            <div class="creditcard">
+                <ul>
+                        <li><img src="images/visa.png" alt=""></li>
+                        <li><img src="images/master.png" alt=""></li>
+                        <li><img src="images/jcb.png" alt=""></li>
+                        <li><img src="images/linkcard.png" alt=""></li>
+                        <li><img src="images/union.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="btn-2"><a href="news.html">回分館列表</a></div>
+        </div>
+        
+    </section>
 
     <footer id="navfooter" class="clearfix">
         <div class="container">
@@ -308,6 +293,7 @@
             </div>
         </div>
     </footer>
+
 
     <!--slider-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>

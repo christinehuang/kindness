@@ -11,7 +11,7 @@ $(document).on('ready', function() {
  $slickElement.slick({
         dots: false,
         infinite: true,
-        speed: 200,
+        speed: 600,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,

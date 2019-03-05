@@ -217,6 +217,158 @@ $(document).ready(function(){
   .addTo(controller);
   });
 
+ $('.mask2').each(function(){
+
+    //build a scene
+  var ourScene24 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.4,
+      reverse: true
+  })
+  .setClassToggle(this, 'scale2') //add class to section1-pic
+  .addIndicators({
+    name: 'imgmask2',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:300
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ $('.fadetran-img').each(function(){
+
+    //build a scene
+  var ourScene26 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.6,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'reservimg',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:400
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ $('.reserv-txt').each(function(){
+
+    //build a scene
+  var ourScene25 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.4,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'reservtxt',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:300
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ $('.reserv-bottom1').each(function(){
+
+    //build a scene
+  var ourScene26 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.6,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'reserv-bottom1',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:300
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ $('.reserv-bottom-txt').each(function(){
+
+    //build a scene
+  var ourScene26 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.5,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'reserv-bottom-txt',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:400
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ var ourScene8 = new ScrollMagic.Scene({
+      triggerElement: '#blackbg',
+      triggerHook: 0,
+      reverse: true
+  })
+  .setClassToggle('#navbar', 'black') //add class to section1-pic
+  .addIndicators({
+    name: 'changebg nav',
+    colorTrigger: '#c90',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent: 400
+  })//this is requires a plugin
+  .addTo(controller);
+
+    var ourScene9 = new ScrollMagic.Scene({
+      triggerElement: '#blackbg',
+      triggerHook: 0,
+      reverse: true
+  })
+  .setClassToggle('#nav-logo-b', 'dis') //add class to section1-pic
+  .addIndicators({
+    name: 'changebg nav',
+    colorTrigger: '#c90',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+
+  var ourScene10 = new ScrollMagic.Scene({
+      triggerElement: '#blackbg',
+      triggerHook: 0,
+      reverse: true
+  })
+  .setClassToggle('#nav-logo-w', 'show') //add class to section1-pic
+  .addIndicators({
+    name: 'changebg nav',
+    colorTrigger: '#c90',
+    colorStart: '#F60',
+    colorEnd: 'Pink'
+  })//this is requires a plugin
+  .addTo(controller);
+
+  var ournavScene = new ScrollMagic.Scene({
+      triggerElement: '#blackbg',
+      triggerHook: 0,
+      reverse: true
+  })
+  .setClassToggle('#index-1200', 'white') //add class to section1-pic
+  .addIndicators({
+    name: 'changenavbg',
+    colorTrigger: 'red',
+    colorStart: '#F60',
+    indent:300
+  })//this is requires a plugin
+  .addTo(controller);
+
 
 });
 

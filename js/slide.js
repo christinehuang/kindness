@@ -14,7 +14,7 @@ $(document).on('ready', function() {
         nextArrow: '<div class="slide-arrow next-arrow"><img src="images/slide-next.svg" alt=""></div>',
         infinite: true,
         variableWidth: true,
-        speed: 300,
+        speed: 600,
         centerMode: true,
         centerPadding: '210px',
         slidesToShow: 1,
