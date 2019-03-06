@@ -402,34 +402,34 @@ h2 {
     left: 100%;
     /* move the whole width of the image to the right */
     margin-left: -200%;
-    -webkit-animation-name: example;
+    -webkit-animation-name: scale;
     /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 8s;
     /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    animation-name: scale;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
+@-webkit-keyframes scale {
     from {
-        transform: scale(1.6, 1.6);
+        transform: scale(2, 2);
     }
 
     to {
-        transform: scale(1.4, 1.4);
+        transform: scale(1.7, 1.7);
     }
 }
 
 /* Standard syntax */
-@keyframes example {
+@keyframes scale {
     from {
-        transform: scale(1.6, 1.6);
+        transform: scale(2, 2);
     }
 
     to {
-        transform: scale(1.4, 1.4);
+        transform: scale(1.7, 1.7);
     }
 }
 
@@ -1857,6 +1857,7 @@ footer hr {
     padding-left: 24%;
 }
 .about-left span{
+    font-family: 'Spectral', serif;
     font-size: 190px;
     color: #F0F0F0;
     position: absolute;
@@ -1865,6 +1866,7 @@ footer hr {
     z-index: -1;
 }
 .about-right span{
+    font-family: 'Spectral', serif;
     font-size: 190px;
     color: #F0F0F0;
     position: absolute;
@@ -2279,6 +2281,7 @@ footer hr {
 }
 
 .facility-service-incon h3{
+    font-family: 'Spectral', serif;
     font-size: 180px;
     color: #F0F0F0;
     position: absolute;
@@ -2617,22 +2620,6 @@ ul.facility-nav li.current p{
     padding-bottom: 40px;
     text-align: justify;
 }
-.blackbg{
-  width: 100%;
-  background-color: #000;
-  color: #FFF!important;
-}
-.blackbg.inside-page-banner {
-    height: 50vh;
-    margin-bottom: 0px;
-    z-index: 1;
-}
-.blackbg.inside-page-banner .overlay{
-    display: none;
-}
-.blackbg h4{
-  color: #FFF!important;
-}
 
 .reserv-bottom1{
     display:-webkit-flex;
@@ -2690,7 +2677,7 @@ ul.facility-nav li.current p{
 .reserv-bottom-txt li{
     line-height: 30px;
     letter-spacing: 2px;
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 40px;
     border-bottom: .5px solid rgba(151, 151 ,151 , .7);
 }
@@ -2712,6 +2699,66 @@ ul.facility-nav li.current p{
     padding-right: 30px;
 }
 /*=========================Reserv list====================================*/
+.blackbg{
+  width: 100%;
+  background-color: #000;
+  color: #FFF!important;
+}
+.blackbg.inside-page-banner {
+    height: 45vh;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+.blackbg.inside-page-banner .overlay{
+    display: none;
+}
+.blackbg h4{
+  color: #FFF!important;
+}
+.reserv-banner{
+    width: 100%;
+    padding:40px 0;
+}
+.reserv-detail-txt{
+    width: 100%;
+    padding: 20px 15%;
+    text-align: center;
+}
+.reserv-detail-txt ul{
+    margin: 0 auto; 
+}
+.reserv-detail-txt li{
+    display: inline-block;
+    width:40%;
+    border-right: 1px solid #999;
+    padding: 10px 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+.reserv-detail-txt li:last-child{
+    border-right: 0px solid #999;
+    margin-left: 40px;
+}
+.blackbg .reserv-content{
+    flex-direction:column;
+}
+.reserv-double {
+   display:-webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    width: 100%;
+}
+.reserv-double img{
+   width: 48%;
+}
+/*=========================Reserv detail====================================*/
 
 @media only screen and (max-width: 1200px) {
     .light_menu {
