@@ -33,6 +33,7 @@ $(document).on('ready', function() {
           settings: {
             prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
             nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
+            variableWidth: true,
             slidesToShow: 1,
             slidesToScroll: 1
           }
@@ -42,7 +43,7 @@ $(document).on('ready', function() {
           settings: {
             prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
             nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
-            centerPadding: '0px',
+            variableWidth: true,
             slidesToShow: 1,
             slidesToScroll: 1
           }
