@@ -1,14 +1,23 @@
 $(document).on('ready', function() {
-       $(".news-banner").slick({
+ var $status = $('.news-counter');
+ var $slickElement = $('.news-banner');
+
+ $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+  var i = (currentSlide ? currentSlide : 0) + 1;
+  $status.text(i + '/' + slick.slideCount);
+ });
+
+ $slickElement.slick({
         dots: true,
         prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
         nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
         infinite: true,
-        speed: 600,
+        speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 1000, 
+        autoplay: true,
+        autoplaySpeed: 4500, 
         responsive: [
         {
           breakpoint: 1024,

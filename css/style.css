@@ -83,6 +83,7 @@ h2 {
     color: #0C2340;
 }
 
+/*=========================basic===========================*/
 
 html[lang="en"] p, html[lang="en"] p a, html[lang="en"] span{
     letter-spacing: 0.5px!important;
@@ -117,6 +118,18 @@ html[lang="en"] .facility-service-incon h3 {
 html[lang="en"] .nav {
     font-size: 11px;
 }
+html[lang="en"] .nav .active a {
+    padding-top: 1px;
+}
+html[lang="en"] .nav a {
+    padding-top: 1px;
+}
+html[lang="en"] .nav a:hover {
+    padding-top: 1px;
+}
+html[lang="en"] .nav1200-right span {
+    font-family: 'Spectral', serif;
+}
 html[lang="en"] .news-txt-right p {
     text-align: left;
 }
@@ -126,7 +139,7 @@ html[lang="en"] .content3_txt_container p {
 html[lang="en"] .content2_txt p {
     text-align: left;
 }
-/*=========================basic===========================*/
+/*=========================lang en===========================*/
 
 .light_menu {
     display: block;
@@ -320,8 +333,10 @@ html[lang="en"] .content2_txt p {
 
 .nav-logo-b {
     opacity: 1;
-    -webkit-transition: all .6s ease-out;
-    transition: all .6s ease-out;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 
 .nav-logo-b.dis {
@@ -335,8 +350,10 @@ html[lang="en"] .content2_txt p {
     left: 0;
     opacity: 0;
     height: : 0;
-    -webkit-transition: all .6s ease-out;
-    transition: all .6s ease-out;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 
 .nav-logo-w.show {
@@ -1164,6 +1181,29 @@ opacity: 1;
 .news-banner{
     width: 100%;
     height: auto;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.news-banner.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.news-content{
+    position: relative;
+}
+.news-counter{
+   position: absolute;
+   right: 28px;
+   bottom: 28px;
+   color: #FFF;
+   z-index: 999;
+   letter-spacing: 2px;
+   font-size: 16px;
 }
 .news-banner .slick-slide {
    margin: 0px 0px;
@@ -1233,10 +1273,30 @@ opacity: 1;
 .news-txt-left{
     display: inline-block;
     width: 30%;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.news-txt-left.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
 }
 .news-txt-right{
     display: inline-block;
     width: 65%;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.news-txt-right.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
 }
 .news-txt-right p{
     font-size: 15px;
@@ -1856,6 +1916,7 @@ footer hr {
 
 #toggle:checked+.hamburger {
     position: fixed;
+    top:24px;
 }
 
 #toggle:checked+.hamburger .top {
@@ -1881,6 +1942,14 @@ footer hr {
 
 .nav1200 {
    display: none;
+}
+.nav1200 hr{
+  position: absolute;
+  top:90px;
+  height: 1px;
+  opacity: .3;
+  z-index: 200;
+  width: 100vw;
 }
 
 .nav1200 .nav-wrapper {
@@ -2029,6 +2098,8 @@ footer hr {
 }
 
 .nav1200-right span {
+    font-family: 'Spectral', serif;
+    font-weight: 700;
     display: inline-block;
     font-size: 42px;
     margin-right: 40px;
@@ -2525,18 +2596,21 @@ footer hr {
     line-height: 20px;
 }
 .traffic-slide-txt h3{
-    font-size: 18px;
+    font-size: 18px!important;
     line-height: 26px;
     letter-spacing: 3px;
     padding: 15px 0;
     font-weight: 500;
 }
 .traffic-slide-txt p{
-    font-size: 14px;
+    font-size: 14px!important;
     line-height: 30px;
     letter-spacing: 2px;
     padding: 0px 0;
     font-weight: 400;
+}
+.traffic-slide-txt p a{
+    color: #000!important;
 }
 .traffic-how{
    width: 100%;
@@ -2880,13 +2954,13 @@ footer hr {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-  from {opacity: 0; transform: scale(1.2);}
+  from {opacity: 0; transform: scale(1.1);}
   to {opacity: 1; transform: scale(1);}
 }
 
 /* Standard syntax */
 @keyframes example {
-  from {opacity: 0; transform: scale(1.2);}
+  from {opacity: 0; transform: scale(1.1);}
   to {opacity: 1; transform: scale(1);}
 }
 .facility-list ul{
@@ -2924,6 +2998,10 @@ footer hr {
     width: 50px;
     height: 1px;
 }
+html[lang="en"] .facility-list li::before{
+    margin-right: 22px;
+    margin-bottom: 3px;
+    }
 .facility-list p{
     position: relative;
     display: inline-block;
@@ -3382,11 +3460,23 @@ ul.facility-nav li.current p{
     width: 100%;
     bottom: 0;
     padding-right: 0%;
-    text-align: justify;
     }
     .reserv-bottom1{
     background-image: none;
     }
+     .facility-mobile {
+    display: block!important;
+    }
+    .facility-container-right{
+     width: 100%;
+     float: right;
+   }
+   .facility-container-right .counter{
+    display: block;
+   }
+   .facility-container-left{
+     display: none;
+   }
 }
 @media only screen and (max-width: 830px) {
     .mobile-nav {
@@ -3567,8 +3657,9 @@ ul.facility-nav li.current p{
     margin: 0 0;
     width: 48%;
     }
-    .slick-slide img {
+    .news-banner .slick-slide img {
     height: 100%;
+    width: 100vw;
     }
     .news-content.container{
         width: 100vw;
@@ -3592,17 +3683,20 @@ ul.facility-nav li.current p{
      margin: 0px 0px;
     }
     .traffic-where h5 {
-    position: absolute;
-    text-align: center;
     width: 55%;
     top: -78px;
     left: 22%;
     font-size: 18px;
     letter-spacing: 4px;
-    font-weight: 500;
-    z-index: 1;
-    background-color: #F0F0F0;
     }
+    .reserv-detail-txt li {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+     }
+     .reserv-detail-txt li:first-child {
+    border-right: 0px;
+     }
 }
 
 @media only screen and (max-width: 600px) {
@@ -3627,7 +3721,22 @@ ul.facility-nav li.current p{
         font-size: 14px;
         letter-spacing: 2px;
         line-height: 24px;
-        top: 18vh;
+        top: 15vh;
+    }
+    .banner-arrow{
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    margin:0 auto;
+    top:16vh;
     }
     .content3_txt_container h2{
         font-size: 40px;
@@ -3705,7 +3814,16 @@ ul.facility-nav li.current p{
     .nav1200-right span {
         display: none;
     }
-
+    html[lang="en"] .nav1200-right li {
+        text-align: center;
+    }
+    html[lang="en"] .nav1200-right span {
+        display: inline-block;
+        font-size: 28px;
+    }
+    html[lang="en"] .nav1200-right p {
+        display: none;
+    }
     .nav1200-right a {
         padding-left: 0;
     }
@@ -3907,19 +4025,7 @@ ul.facility-nav li.current p{
      width: 110%;
     left: -16px;
     }
-    .facility-mobile {
-    display: block!important;
-    }
-    .facility-container-right{
-     width: 100%;
-     float: right;
-   }
-   .facility-container-right .counter{
-    display: block;
-   }
-   .facility-container-left{
-     display: none;
-   }
+   
    .reserv.container{
     width: 100%;
    }
@@ -3973,7 +4079,7 @@ ul.facility-nav li.current p{
     width: 100%;
     left: 0px;
     }
-     html[lang="en"] .traffic-tab{
+    html[lang="en"] .traffic-tab{
      letter-spacing: 0.5px;
     }
 }

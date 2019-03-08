@@ -164,7 +164,7 @@ $(document).ready(function(){
     //build a scene
   var ourScene21 = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 0.8,
+      triggerHook: 0.6,
       reverse: true
   })
   .setClassToggle(this, 'fade-in') //add class to section1-pic
@@ -183,7 +183,7 @@ $(document).ready(function(){
     //build a scene
   var ourScene22 = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 0.7,
+      triggerHook: 0.5,
       reverse: true
   })
   .setClassToggle(this, 'fade-in') //add class to section1-pic
@@ -320,6 +320,63 @@ $(document).ready(function(){
   .setClassToggle(this, 'fade-in') //add class to section1-pic
   .addIndicators({
     name: 'reserv-detail-txt',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:400
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+ $('.news-banner').each(function(){
+
+    //build a scene
+  var ourScene31 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.3,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'news-banner',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:400
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+  $('.news-txt-left').each(function(){
+
+    //build a scene
+  var ourScene32 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.7,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'news-txt-left',
+    colorTrigger: '#F60',
+    colorStart: '#F60',
+    colorEnd: 'Pink',
+    indent:400
+  })//this is requires a plugin
+  .addTo(controller);
+  });
+
+  $('.news-txt-right').each(function(){
+
+    //build a scene
+  var ourScene33 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.6,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addIndicators({
+    name: 'news-txt-left',
     colorTrigger: '#F60',
     colorStart: '#F60',
     colorEnd: 'Pink',
