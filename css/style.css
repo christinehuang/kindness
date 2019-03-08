@@ -83,6 +83,49 @@ h2 {
     color: #0C2340;
 }
 
+
+html[lang="en"] p, html[lang="en"] p a, html[lang="en"] span{
+    letter-spacing: 0.5px!important;
+    font-family: 'Montserrat', sans-serif;
+}
+html[lang="en"] h4, html[lang="en"] h5 {
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html[lang="en"] a {
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+html[lang="en"] .facility-service-incon p, html[lang="en"] .facility-service-incon span {
+    text-align: center!important;
+}
+html[lang="en"] .facility-service-incon span {
+    font-size: 16px;
+}
+html[lang="en"] .facility-service-incon li {
+    max-width: 200px;
+}
+html[lang="en"] .icon-ul {
+    padding-right: 0%;
+}
+html[lang="en"] .facility-service-incon h3 {
+    top: -90px;
+    left: -10px;
+    text-align: center;
+}
+html[lang="en"] .nav {
+    font-size: 11px;
+}
+html[lang="en"] .news-txt-right p {
+    text-align: left;
+}
+html[lang="en"] .content3_txt_container p {
+    text-align: left;
+}
+html[lang="en"] .content2_txt p {
+    text-align: left;
+}
 /*=========================basic===========================*/
 
 .light_menu {
@@ -189,6 +232,7 @@ h2 {
     color: #FFF;
     letter-spacing: 3px;
     font-size: 13px;
+    text-transform: uppercase;
 }
 
 .nav ul {
@@ -315,6 +359,7 @@ h2 {
     /* Safari */
     transition: .6s;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .navbar_link a:hover {
@@ -454,6 +499,70 @@ h2 {
 }
 
 /*=========================slider===========================*/
+.banner-arrow{
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    margin:0 auto;
+    top:30vh;
+}
+.banner-arrow img{
+   position: absolute;
+    -webkit-animation: arrow 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation: arrow 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-animation-delay: 0;
+    animation-delay: 0s;
+}
+.banner-arrow img:first-child{
+   bottom:6px;
+   -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @-webkit-keyframes chevron-pulse {
     0% {
         opacity: 0;
@@ -492,7 +601,7 @@ h2 {
 
 .tcon-svgchevron {
     height: 30px;
-    width: 40px;
+    width: 45px;
 }
 
 .tcon-svgchevron path {
@@ -958,6 +1067,7 @@ opacity: 1;
     font-weight: 400;
     margin: 1em auto;
     padding: 15px;
+    line-height: 24px;
     width: 258px;
     position: relative;
     z-index: 2;
@@ -1013,6 +1123,7 @@ opacity: 1;
     font-weight: 400;
     margin: 1em auto;
     padding: 15px;
+    line-height: 24px;
     width: 258px;
     position: relative;
     z-index: 2;
@@ -2318,7 +2429,235 @@ footer hr {
     right:30px;
     z-index: 2;
 }
-/*=========================Traffic====================================*/
+/*=========================Traffic list====================================*/
+.traffic-grey{
+    position: relative;
+    padding-top: 70px;
+}
+.container.traffic-where{
+    position: relative;
+    width: 85%;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.traffic-where hr{
+    position: absolute;
+    width: 105%;
+    top:-70px;
+    left:-2.5%;
+    z-index: 0;
+}
+.traffic-grey h4{
+   text-align: center;
+   font-size: 20px;
+   letter-spacing: 4px;
+   color: #0C2340;
+   font-weight: 400;
+   margin-bottom: 120px;
+}
+.traffic-where h5{
+    position: absolute;
+   text-align: center;
+   width: 24%;
+    top:-78px;
+    left:38%;
+   font-size: 18px;
+   letter-spacing: 4px;
+   font-weight: 500;
+   z-index: 1;
+   background-color: #F0F0F0;
+}
+
+.traffic-slide{
+    width: 100%;
+    height: auto;
+}
+.traffic-slide{
+  margin-bottom: 90px;
+}
+.traffic-slide .slick-slide {
+   margin: 0px 20px;
+  }
+.traffic-slide .slide-arrow{
+  position: absolute;
+  top: 30%;
+  margin-top: -55px;
+  cursor: pointer;
+}
+.traffic-slide .prev-arrow{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: -7%!important;
+    padding: 22px;
+    z-index: 50;   
+}
+.traffic-slide .prev-arrow img{
+    max-width: 19px;
+}
+.traffic-slide .prev-arrow:hover{
+  left: -8%!important;
+}
+.traffic-slide .next-arrow{
+     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 22px;
+  right: -7%!important;   
+}
+.traffic-slide .next-arrow img{
+    max-width: 19px;
+}
+.traffic-slide .next-arrow:hover{
+  right: -8%!important;   
+}
+.traffic-slide-txt{
+    display: block;
+    width: 100%;
+    padding: 5%;
+    text-align: justify;
+}
+.traffic-slide-txt span{
+    color: #9B9B9B;
+    font-size: 16px;
+    line-height: 20px;
+}
+.traffic-slide-txt h3{
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 3px;
+    padding: 15px 0;
+    font-weight: 500;
+}
+.traffic-slide-txt p{
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 0px 0;
+    font-weight: 400;
+}
+.traffic-how{
+   width: 100%;
+}
+.traffic-how h4 {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #0C2340;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+.traffic-how a{
+    color: #000;
+    letter-spacing: 3px;
+}
+.traffic-map{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    margin-bottom: 12%;
+}
+#map {
+   width: 100%;
+   height: 35vw;
+}
+.map-info{
+    position: absolute;
+    display: block;
+    width: 66%;
+    padding: 4%;
+    text-align: center;
+    z-index: 50;
+    top: 50%;
+    left:17%;
+    background-color: #FFF;
+}
+.map-info h4{
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.map-info p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.map-info img{
+    max-width: 134px;
+    margin: 0 auto;
+    width: 100%;
+}
+/*=========================Traffic detail====================================*/
+
+.accordion {
+  max-width: 560px;
+  margin: 0 auto 100px;
+  border-top: 0px solid #C8C7C7;
+}
+.accordion li {
+  border-bottom: 1px solid #C8C7C7;
+  position: relative;
+}
+.accordion li p {
+  display: none;
+  padding: 10px 25px 30px;
+  color: #4A4A4A;
+}
+.accordion a {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 3;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-indent: 15px;
+  user-select: none;
+}
+.accordion a::after {
+  width: 14px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  right: 10px;
+  content: " ";
+  top: 19px;
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.accordion p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 30px;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.accordion span::after {
+  width: 14px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  right: 10px;
+  content: " ";
+  top: 19px;
+  transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.accordion a.active:after {
+  transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/*=========================accordion====================================*/
 
 .facility-top{
     display: -webkit-flex;
@@ -2350,7 +2689,6 @@ footer hr {
    width: 100%;
    bottom: 0;
    padding-right: 28%;
-   text-align: justify;
 }
 .facility-top h2{
     font-family: 'Spectral', serif;
@@ -2457,6 +2795,12 @@ footer hr {
 .facility-mobile {
     display: none!important;
     text-align: center;
+}
+.facility-mobile .slide-arrow {
+    position: absolute;
+    top: 59%;
+    margin-top: -55px;
+    cursor: pointer;
 }
 .facility-mobile span{
     color: #0C2340;
@@ -2697,6 +3041,25 @@ ul.facility-nav li.current p{
     line-height: 30px;
     margin: 0 auto; 
 }
+.btn.trip-logo a{
+   background-image: url(../images/trip-logo.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   color: rgba(0,0,0,0);
+}
+.btn.trip-logo a:hover{
+   background-image: url(../images/trip-logo-w.svg);
+}
+.btn.book-logo a{
+   background-image: url(../images/book-logo.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   color: rgba(0,0,0,0);
+}
+.btn.book-logo a:hover{
+   background-image: url(../images/book-logo-w.svg);
+}
+
 .reserv-content{
     display:-webkit-flex;
     /* Safari */
@@ -2782,7 +3145,6 @@ ul.facility-nav li.current p{
     line-height: 30px;
     padding-top: 30px;
     padding-bottom: 40px;
-    text-align: justify;
 }
 
 .reserv-bottom1{
@@ -3206,7 +3568,6 @@ ul.facility-nav li.current p{
     width: 48%;
     }
     .slick-slide img {
-        width: 100vw;
     height: 100%;
     }
     .news-content.container{
@@ -3226,6 +3587,21 @@ ul.facility-nav li.current p{
     }
     .news-banner .next-arrow:hover {
     right: -3%!important;
+    }
+    .traffic-slide .slick-slide {
+     margin: 0px 0px;
+    }
+    .traffic-where h5 {
+    position: absolute;
+    text-align: center;
+    width: 55%;
+    top: -78px;
+    left: 22%;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    z-index: 1;
+    background-color: #F0F0F0;
     }
 }
 
@@ -3509,6 +3885,7 @@ ul.facility-nav li.current p{
     }
     .facility-gallery .container h2, .facility-gallery .container h4{
     padding: 0 7.5%;
+    margin-bottom: 5%;
     }
     .traffic-more{
     position: absolute;
@@ -3583,6 +3960,22 @@ ul.facility-nav li.current p{
     margin:20px 0;
     width: 100%;
    }
+   html[lang="en"] .traffic-tab li {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+    html[lang="en"] .traffic-tab ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    left: 0px;
+    }
+     html[lang="en"] .traffic-tab{
+     letter-spacing: 0.5px;
+    }
 }
 @media only screen and (max-width: 480px) {
     .facility-service-incon ul{

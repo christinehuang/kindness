@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kindness康橋慢旅</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css'>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+    <header>
+        <div class="light_menu">
+            <div class="menu-container">
+                <div class="light-logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></div>
+                <div class="light-nav-container">
+                    <div class="light-lan"><span><a href="#">繁中</a></span>｜<span><a href="#">EN</a></span></div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="about.html">認識我們</a></li>
+                            <li><a href="reserv-list.html">訂房Go!</a></li>
+                            <li><a href="food.html">餐飲料理</a></li>
+                            <li><a href="facility.html">服務設施</a></li>
+                            <li class="active"><a href="traffic-list.html">交通資訊</a></li>
+                            <li><a href="news.html">最新消息</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="light-icon">
+                    <span><a href="#"><img src="images/FB-icon-light.svg" alt="FB-icon"></a></span>
+                    <span><a href="#"><img src="images/IG-icon-light.svg" alt="IG-icon"></a></span>
+                </div>
+                <input id="toggle" type="checkbox" />
+                <label class="hamburger" for="toggle">
+                    <div class="top"></div>
+                    <div class="meat"></div>
+                    <div class="bottom"></div>
+                </label>
+                <div class="nav1200">
+                    <div class="nav-wrapper">
+                        <nav class="mobile-nav">
+                            <div class="nav1200-left">
+                                <div class="nav1200-logo"><img src="images/straight-logo.svg" alt=""></div>
+                                <div class="nav1200-lan"><span class="active"><a href="#">繁中</a></span>｜<span><a href="#">En</a></span></div>
+                                <div class="nav1200-icons">
+                                    <a href="#"><img src="images/FB-icon-light.svg" alt=""></a>
+                                    <a href="#"><img src="images/IG-icon-light.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="nav1200-right">
+                                <ul>
+                                    <li><a href="about.html"><span>Our Value</span>
+                                            <p>認識我們</p>
+                                        </a></li>
+                                    <li><a href="#"><span>Reservation</span>
+                                            <p>訂房Go!</p>
+                                        </a></li>
+                                    <li><a href="food.html"><span>Food & Beverages</span>
+                                            <p>餐飲料理</p>
+                                        </a></li>
+                                    <li><a href="facility.html"><span>Facility</span>
+                                            <p>服務設施</p>
+                                        </a></li>
+                                    <li class="active"><a href="traffic-list.html"><span>Traffic</span>
+                                            <p>交通資訊</p>
+                                        </a></li>
+                                    <li><a href="news.html"><span>News</span>
+                                            <p>最新消息</p>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div class="nav800-icons">
+                                <a href="#"><img src="images/FB-icon-light.svg" alt=""></a>
+                                <a href="#"><img src="images/IG-icon-light.svg" alt=""></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!--burger-->
+            </div>
+        </div>
+        <!--light-menu-->
+        <div id="navbar">
+            <div class="navbar_logo"><a href="index.html">
+                    <img id="nav-logo-b" class="nav-logo-b" src="images/logo-b.svg" alt="logo">
+                    <img id="nav-logo-w" class="nav-logo-w" src="images/logo-w.svg" alt="logo">
+                </a></div>
+            <div class="navbar_link">
+                <a href="about.html">認識我們</a>
+                <a href="reserv-list.html">訂房Go!</a>
+                <a href="food.html">餐飲料理</a>
+                <a href="facility.html">服務設施</a>
+                <a href="traffic-list.html">交通資訊</a>
+                <a href="news.html">最新消息</a>
+            </div>
+            <div class="navbar_icon">
+                <span><a href="#"><img src="images/FB-icon.svg" alt="FB-icon"></a></span>
+                <span><a href="#"><img src="images/IG-icon.svg" alt="IG-icon"></a></span>
+            </div>
+            <label id="index-1200" class="hamburger scrollh-b" for="toggle">
+                <div class="top"></div>
+                <div class="meat"></div>
+                <div class="bottom"></div>
+            </label>
+        </div>
+        <!--light-scrollnavbar-->
+    </header>
+    <!--slider-->
+    <section class="inside-page-banner">
+        <div class="light_Banner_container_table inside-banner">
+            <div class="light_Banner_container_table_cell">
+                <h2>Traffic</h2>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="inside-banner-contain" style="background-image: url(images/banner1.jpeg);"></div>
+    </section>
+    <!--content-->
+    <section id="inside-section" class="container clearfix">
+        <div class="traffic-map">
+            <div id="map"></div>
+            <div class="map-info">
+               <h4>康橋慢旅本館</h4>
+               <p>700 台南市中西區民生路二段416號</p>
+               <a target="_blank" href="https://www.google.com/maps/place/700%E5%8F%B0%E5%8D%97%E5%B8%82%E4%B8%AD%E8%A5%BF%E5%8D%80%E6%B0%91%E7%94%9F%E8%B7%AF%E4%BA%8C%E6%AE%B5416%E8%99%9F/@22.9977106,120.1858347,17z/data=!3m1!4b1!4m5!3m4!1s0x346e766e9eb8cafb:0x1efaed10bf0ee39a!8m2!3d22.9977106!4d120.1880234"><img src="images/gmap-txt.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="traffic-how">
+            <h4>- 如何抵達 -</h4>
+            <ul class="accordion">
+                <li>
+                    <span></span><a>自行開車</a>
+                    <p>南下：國道一號 → 下永康交流道 → 直行正北路→  中正南路 → 西門路四段→ 西門路三段 → 西門路二段 → 右轉民生路二段 → 直行約1.2公里 → 康橋慢旅於右手邊 北上：國道一號 → 往西走86線(東西向快速公路-台南關廟線) → 下台南交流道灣裡出口 → 右轉永成路一段 → 永成路二段 → 永成路三段 → 夏林路 → 海安路一段 → 海安路二段 → 左轉民生路二段→ 直行約 900 公尺 → 康橋慢旅於右手邊</p>
+                </li>
+                <li>
+                    <span></span><a>公車</a>
+                   <p>南下：國道一號 → 下永康交流道 → 直行正北路→  中正南路 → 西門路四段→ 西門路三段 → 西門路二段 → 右轉民生路二段 → 直行約1.2公里 → 康橋慢旅於右手邊 北上：國道一號 → 往西走86線(東西向快速公路-台南關廟線) → 下台南交流道灣裡出口 → 右轉永成路一段 → 永成路二段 → 永成路三段 → 夏林路 → 海安路一段 → 海安路二段 → 左轉民生路二段→ 直行約 900 公尺 → 康橋慢旅於右手邊</p>
+                </li>
+                <li>
+                    <span></span><a>火車</a>
+                    <p>南下：國道一號 → 下永康交流道 → 直行正北路→  中正南路 → 西門路四段→ 西門路三段 → 西門路二段 → 右轉民生路二段 → 直行約1.2公里 → 康橋慢旅於右手邊 北上：國道一號 → 往西走86線(東西向快速公路-台南關廟線) → 下台南交流道灣裡出口 → 右轉永成路一段 → 永成路二段 → 永成路三段 → 夏林路 → 海安路一段 → 海安路二段 → 左轉民生路二段→ 直行約 900 公尺 → 康橋慢旅於右手邊</p>
+                </li>
+                <li>
+                    <span></span><a>高鐵</a>
+                    <p>南下：國道一號 → 下永康交流道 → 直行正北路→  中正南路 → 西門路四段→ 西門路三段 → 西門路二段 → 右轉民生路二段 → 直行約1.2公里 → 康橋慢旅於右手邊 北上：國道一號 → 往西走86線(東西向快速公路-台南關廟線) → 下台南交流道灣裡出口 → 右轉永成路一段 → 永成路二段 → 永成路三段 → 夏林路 → 海安路一段 → 海安路二段 → 左轉民生路二段→ 直行約 900 公尺 → 康橋慢旅於右手邊</p>
+                </li>
+               
+            </ul> <!-- / accordion -->
+        </div>
+    </section>
+    <section class="container-full greybg clearfix traffic-grey">
+        <h4>- 周邊找好玩 -</h4>
+        <div class="container traffic-where">
+            <h5>找景點散散步</h5>
+            <hr>
+            <div class="traffic-slide slider">
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>1</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>2</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>3</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>4</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>5</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>6</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+            </div>
+            <!--slider-->
+        </div>
+        <!--container-->
+        <div class="container traffic-where">
+            <h5>找商圈逛逛街</h5>
+            <hr>
+            <div class="traffic-slide slider">
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>1</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>2</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>3</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>4</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>5</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+                <div>
+                    <img src="images/food1.png">
+                    <div class="traffic-slide-txt">
+                        <span>6</span>
+                        <h3>安平古堡、安平老街</h3>
+                        <p>708 台南市安平區國勝路82號<br>營業時間 週一～週日08:30-17:30 <br> 電話 (06) 2267348</p>
+                    </div>
+                    <!--txt-->
+                </div>
+            </div>
+            <!--slider-->
+            <div class="btn"><a href="traffic-list.html">回分館列表</a></div>
+        </div>
+        <!--container-->
+    </section>
+    <footer id="navfooter" class="clearfix">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_logo"><img src="images/footer-logo.svg" alt="FB-icon"></div>
+                <div class="footer_title">
+                    <h4><img src="images/ch-logo.svg" alt=""></h4>
+                </div>
+                <div class="footer_info">
+                    <div class="footer_icon">
+                        <span><a href="#"><img src="images/FB-icon-light.svg" alt="FB-icon"></a></span>
+                        <span><a href="#"><img src="images/IG-icon-light.svg" alt="IG-icon"></a></span>
+                    </div>
+                    <div class="footer_link">
+                        <span><a href="#"><img src="images/footer-arrow.svg" alt="FB-icon"></a></span>
+                        <span><a href="#">人才募集</a></span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_copyright">
+                <span>Copyright @ 2019 Kindness Day Hotel</span>
+            </div>
+        </div>
+    </footer>
+    <!--slider-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js'></script>
+    <script src="js/slide.js"></script>
+    <script>
+    $(document).on('ready', function() {
+        $(".traffic-slide").slick({
+            dots: false,
+            prevArrow: '<div class="slide-arrow prev-arrow"><img src="images/slide-prev.svg" alt=""></div>',
+            nextArrow: '<div class="slide-arrow next-arrow"><img src="images/slide-next.svg" alt=""></div>',
+            infinite: true,
+            variableWidth: false,
+            speed: 800,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 780,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
+                        nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+    </script>
+    <!--slider-->
+    <script>
+        (function($) {
+    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+    $('.accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('p');
+
+        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+})(jQuery);
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaNd1kt1rzwAif3KyzksJqmMCbMyhhkaI"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+</body>
+
+</html>
