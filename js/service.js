@@ -17,15 +17,15 @@ $(document).on('ready', function() {
         centerMode: true,
         centerPadding: '0px',
         variableWidth: false,
-        prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev.svg" alt=""></div>',
-        nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next.svg" alt=""></div>',
-        autoplay: false,
-        autoplaySpeed: 1000, 
+        prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
+        nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
+        autoplay: true,
+        autoplaySpeed: 4200, 
         responsive: [
         {
           breakpoint: 1024,
           settings: {
-            centerPadding: '110px',
+            centerPadding: '0px',
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,

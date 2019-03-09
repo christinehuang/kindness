@@ -19,7 +19,7 @@ $(document).on('ready', function() {
         centerPadding: '15%',
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4200, 
         responsive: [
         {

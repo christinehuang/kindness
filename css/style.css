@@ -1817,7 +1817,7 @@ footer hr {
     display: -ms-inline-flex;
     /* IE10 */
     display: inline-flex;
-    width: 28%;
+    width: 38%;
     height: auto;
 }
 
@@ -1832,15 +1832,12 @@ footer hr {
     display: -ms-inline-flex;
     /* IE10 */
     display: inline-flex;
-    width: 10%;
+    height: 16px;
     color: #FFF;
-    padding-left: 5%;
-    padding-top: 12px;
+    padding-left: 2%;
+    margin-top: 12px;
 }
 
-.footer_title h4 img {
-    height: 16px;
-}
 
 .footer_info {
     display: -webkit-inline-flex;
