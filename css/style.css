@@ -98,7 +98,6 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;
     height: 100%;
-    width: calc(100vw + 18px);
     overflow: auto;
 }
 /*=========================basic===========================*/
@@ -472,6 +471,11 @@ html[lang="en"] .content2_txt p {
 
 .slider_container {
     position: relative;
+     width: 100vw;
+    /* Update to your slider width */
+    height: 100vh;
+    /* Update to your slider height */
+    overflow-x: hidden;
     z-index: -1;
 }
 
@@ -516,10 +520,10 @@ html[lang="en"] .content2_txt p {
 .index-slider {
     width: 100vw;
     /* Update to your slider width */
-    height: 100vh;
+     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+     height: calc(var(--vh, 1vh) * 100);
     /* Update to your slider height */
     position: relative;
-    overflow: hidden;
     text-align: center;
     margin: 0 0;
 }
@@ -724,8 +728,8 @@ opacity: 1;
 
 .content1 {
     display: table;
-    height: 750px;
-    margin-bottom: 40px;
+    height: 780px;
+    margin-bottom: 10px;
     background-color: #FFF;
 }
 
@@ -741,6 +745,7 @@ opacity: 1;
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease-out;
+    padding: 10% 0;
 }
 
 .content1_img_container_row.fade-in {
@@ -1956,6 +1961,7 @@ footer hr {
 
 #toggle:checked+.hamburger+.nav1200 {
     top: 0;
+    opacity: 1;
 }
 
 .nav1200 {
@@ -3460,8 +3466,9 @@ ul.facility-nav li.current p{
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -4106,6 +4113,27 @@ ul.facility-nav li.current p{
     }
     html[lang="en"] .traffic-tab{
      letter-spacing: 0.5px;
+    }
+    #map {
+        display: none;
+   }
+   .map-info {
+    width: 80%;
+    padding: 4%;
+    top: 10%;
+    left: 12%;
+    }
+    .variable .slick-slide img {
+    width: 100vw;
+    }
+    .variable .slick-slide {
+    margin: 0px 0px;
+    }
+    .facility-mobile .slick-slide img {
+    width: 100vw;
+    }
+    .facility-mobile .slick-slide {
+    margin: 0px 0px;
     }
 }
 @media only screen and (max-width: 480px) {

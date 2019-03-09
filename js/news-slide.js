@@ -16,6 +16,7 @@ $(document).on('ready', function() {
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
+        lazyLoad: 'ondemand',
         autoplay: false,
         autoplaySpeed: 4500, 
         responsive: [

@@ -16,9 +16,9 @@ $(document).on('ready', function() {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '0px',
-        variableWidth: true,
-        prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev-w.svg" alt=""></div>',
-        nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next-w.svg" alt=""></div>',
+        variableWidth: false,
+        prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/slide-prev.svg" alt=""></div>',
+        nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/slide-next.svg" alt=""></div>',
         autoplay: false,
         autoplaySpeed: 1000, 
         responsive: [
