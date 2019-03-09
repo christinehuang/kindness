@@ -2546,7 +2546,18 @@ footer hr {
     width: 85%;
     padding-top: 0px;
     padding-bottom: 30px;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    transform: translateY(50px);
+    opacity: 0;
 }
+.traffic-where.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 .traffic-where hr{
     position: absolute;
     width: 105%;
@@ -2650,6 +2661,16 @@ footer hr {
 }
 .traffic-how{
    width: 100%;
+   -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.traffic-how.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
 }
 .traffic-how h4 {
     text-align: center;
@@ -2683,6 +2704,16 @@ footer hr {
     top: 50%;
     left:17%;
     background-color: #FFF;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.map-info.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
 }
 .map-info h4{
     font-size: 18px;
@@ -3533,6 +3564,11 @@ ul.facility-nav li.current p{
    }
 }
 @media only screen and (max-width: 830px) {
+    .news-banner.slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    }
     .mobile-nav {
         height: 150vh;
         flex-direction: column;
