@@ -1248,7 +1248,7 @@ opacity: 1;
    right: 28px;
    bottom: 28px;
    color: #FFF;
-   z-index: 999;
+   z-index: 9;
    letter-spacing: 2px;
    font-size: 16px;
 }
@@ -3801,6 +3801,20 @@ ul.facility-nav li.current p{
      .reserv-detail-txt li:first-child {
     border-right: 0px;
      }
+     .traffic-slide-txt h3{
+    font-size: 16px!important;
+    line-height: 26px;
+    letter-spacing: 3px;
+    padding: 15px 0;
+    font-weight: 500;
+    }
+   .traffic-slide-txt p{
+    font-size: 12px!important;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 0px 0;
+    font-weight: 400;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -4193,7 +4207,13 @@ ul.facility-nav li.current p{
     width: 80%;
     padding: 4%;
     top: 10%;
-    left: 12%;
+    left: 9%;
+    }
+    .traffic-map {
+    position: relative;
+    width: 100%;
+    height: 46vw;
+    margin-bottom: 14%;
     }
     .variable .slick-slide img {
     width: 100vw;
