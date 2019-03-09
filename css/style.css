@@ -115,6 +115,10 @@ html[lang="en"] a {
     letter-spacing: 0.5px;
     font-family: 'Montserrat', sans-serif;
 }
+html[lang="en"] .light_Banner_container_table_cell h3 {
+    display: none;
+}
+
 html[lang="en"] .facility-service-incon p, html[lang="en"] .facility-service-incon span {
     text-align: center!important;
 }
@@ -155,6 +159,14 @@ html[lang="en"] .content3_txt_container p {
 }
 html[lang="en"] .content2_txt p {
     text-align: left;
+}
+html[lang="en"] .footer_title{
+    display: none;
+}
+html[lang="en"] .news-btn{
+    font-size: 13px;
+    text-transform: capitalize;
+    line-height: 29px;
 }
 /*=========================lang en===========================*/
 
@@ -2572,6 +2584,7 @@ footer hr {
    color: #0C2340;
    font-weight: 400;
    margin-bottom: 120px;
+   text-transform: uppercase;
 }
 .traffic-where h5{
     position: absolute;
@@ -2679,6 +2692,7 @@ footer hr {
     color: #0C2340;
     font-weight: 400;
     margin-bottom: 70px;
+    text-transform: uppercase;
 }
 .traffic-how a{
     color: #000;
