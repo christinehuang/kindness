@@ -66,6 +66,9 @@ a {
     margin: 0 auto;
     position: relative;
 }
+header{
+    position: relative;
+}
 
 footer {
     height: auto;
@@ -86,20 +89,14 @@ h2 {
 /*=========== scrollbar fix ==============*/
 @-ms-viewport { width: device-width; }
 
-html {
-    overflow: -moz-hidden-unscrollable;
-    height: 100%;
-}
-
 body::-webkit-scrollbar {
     display: none;
 }
 
 body {
     -ms-overflow-style: none;
-    height: 100%;
-    overflow: auto;
 }
+
 /*=========================basic===========================*/
 
 html[lang="en"] p, html[lang="en"] p a, html[lang="en"] span{
@@ -722,6 +719,7 @@ opacity: 1;
 
 /*=========================img animate===========================*/
 .inside-page-banner{
+    position: relative;
     height: 60vh;
     overflow: hidden;
     margin-bottom: 70px;
