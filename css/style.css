@@ -3945,6 +3945,9 @@ ul.facility-nav li.current p{
 }
 
 @media only screen and (max-width: 600px) {
+    html[lang="en"] .news-btn {
+    font-size: 13px;
+  } 
     .news-pic {
     height: 200px;
     min-height: 200px;
