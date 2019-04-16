@@ -3851,6 +3851,9 @@ ul.facility-nav li.current p{
     flex-direction:column;
     margin-top:12%;
     }
+    .reserv-content:nth-child(even) {
+    flex-direction:column;
+    }
     .reserv-content2{
    flex-direction:column;
     margin-top:12%;
