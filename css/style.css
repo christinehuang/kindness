@@ -412,7 +412,7 @@ html[lang="en"] .footer_copyright span:nth-child(1) {
     top: 0;
     left: 0;
     opacity: 0;
-    height: : 0;
+    height:0;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
