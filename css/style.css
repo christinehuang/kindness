@@ -2201,6 +2201,7 @@ footer hr {
     color: #9B9B9B;
     font-size: 13px;
     letter-spacing: 2.3px;
+    text-transform: uppercase;
 }
 .nav1200-lan .active a{
     color: #FFF;
