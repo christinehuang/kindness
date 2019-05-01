@@ -16,7 +16,7 @@ $(document).on('ready', function() {
         variableWidth: false,
         speed: 600,
         centerMode: true,
-        centerPadding: '20%',
+        centerPadding: '23%',
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,

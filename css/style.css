@@ -779,6 +779,13 @@ opacity: 1;
 /*=========================inside banner===========================*/
 
 .container2 {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     width: 100%;
     max-width: 1990px;
     margin: 0 auto;
@@ -850,6 +857,7 @@ opacity: 1;
     width: 50%;
     position: absolute;
     left: 0;
+    top: 16%;
     z-index: 2;
     opacity: 0;
     transform: translateY(50px);
@@ -867,12 +875,12 @@ opacity: 1;
     font-size: 4.2em;
     font-weight: 600;
     padding: 20px;
-    margin-top: 52px;
+    margin-top: 0px;
     margin-left: 15%;
 }
 
 .content2_txt h4 {
-    line-height: 55px;
+    line-height: 66px;
     font-size: 1.7em;
     font-weight: 500;
     padding-left: 55px;
@@ -881,9 +889,11 @@ opacity: 1;
 }
 
 .content2_txt p {
+    color: #666;
     line-height: 30px;
     font-size: 1.1em;
     padding-left: 55px;
+    padding-right: 10%;
     margin-left: 22%;
     letter-spacing: 2px;
     text-align: justify;
@@ -1247,7 +1257,7 @@ opacity: 1;
     font-weight: 400;
     margin: 1em auto;
     padding: 15px;
-    line-height: 24px;
+    line-height: 26px;
     width: 258px;
     position: relative;
     z-index: 2;
@@ -1301,15 +1311,17 @@ opacity: 1;
 }
 
 .news-content{
+    width: 78%;
     position: relative;
 }
 .news-counter{
+    font-family: 'Montserrat', sans-serif;
    position: absolute;
    right: 28px;
    bottom: 28px;
    color: #FFF;
    z-index: 9;
-   letter-spacing: 2px;
+   letter-spacing: 8px;
    font-size: 16px;
 }
 .news-banner .slick-slide {
@@ -1367,13 +1379,15 @@ opacity: 1;
     padding:2% 4%;
 }
 .news-txt-left h4{
-    font-size: 19px;
+    font-size: 24px;
     letter-spacing: 3px;
     font-weight: 500;
     padding-bottom: 10px;
 }
 .news-txt-left p{
-    font-size: 14px;
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 20px;
     color: #9B9B9B;
     letter-spacing: 1.5px;
 }
@@ -1407,7 +1421,7 @@ opacity: 1;
 }
 .news-txt-right p{
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     line-height: 30px;
     font-weight: 400;
     text-align: justify;
@@ -1905,8 +1919,9 @@ footer hr {
     height: auto;
 }
 
-.footer_logo img {
+.footer_logo img:nth-child(1){
     width: 180px;
+    height: 50px;
 }
 
 .footer_title {
@@ -1915,9 +1930,9 @@ footer hr {
     display: -ms-inline-flex;
     /* IE10 */
     display: inline-flex;
-    height: 16px;
+    height: 20px;
     color: #FFF;
-    padding-left: 2%;
+    padding-left: 5%;
     margin-top: 12px;
 }
 
@@ -1933,7 +1948,8 @@ footer hr {
     color: #999;
     width: 62%;
     line-height: 45px;
-    font-size: 1em;
+    font-size: 1.4em;
+    letter-spacing: 4px;
 }
 
 .footer_icon {
@@ -1950,7 +1966,12 @@ footer hr {
 .footer_icon img:hover {
     opacity: 1;
 }
-
+.footer_link{
+    padding-top: 3px;
+}
+.footer_link img{
+    padding-bottom: 3px;
+}
 .footer_link a {
     color: #999;
     transition: all 0.4s;
@@ -1962,9 +1983,10 @@ footer hr {
 
 .footer_copyright {
     display: block;
+    font-family: 'Montserrat', sans-serif;
     color: #666;
     line-height: 45px;
-    font-size: .8em;
+    font-size: .95em;
     letter-spacing: 1px;
 }
 .footer_copyright a{
@@ -1972,8 +1994,8 @@ footer hr {
 }
 .footer_copyright span:nth-child(2){
     float: right;
-    font-size: 1.35em;
-    letter-spacing: 2px;
+    font-size: 1.5em;
+    letter-spacing: 3px;
 }
 /*=========================footer===========================*/
 
@@ -2265,12 +2287,13 @@ footer hr {
     width: 100%;
     height: auto;
     min-height: 390px;
-    margin-top:8%;
-    padding-bottom: 40px;
-    margin-bottom: 40px; 
+    margin-top:2%;
+    padding-bottom: 2%;
+    margin-bottom: 0px; 
 }
 .about-txt{
     padding-top: 100px;
+    margin-top: 13%;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -2290,9 +2313,9 @@ footer hr {
 .about-content h4{
     display: block;
     padding-left: 24%;
-    font-size: 20px;
+    font-size: 24px;
     color: #0C2340;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     line-height: 32px;
     font-weight: 400;
 }
@@ -2308,25 +2331,28 @@ footer hr {
     font-size: 15px;
     letter-spacing: 2px;
     line-height: 30px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 24%;
+    color: #666;
 }
 .about-left span{
     font-family: 'Spectral', serif;
     font-size: 190px;
+    font-weight: 600;
     color: #F0F0F0;
     position: absolute;
-    top: -40px;
-    right:14%;
+    top: -18px;
+    left:40%;
     z-index: -1;
 }
 .about-right span{
     font-family: 'Spectral', serif;
     font-size: 190px;
+    font-weight: 600;
     color: #F0F0F0;
     position: absolute;
-    top: -40px;
-    right:14%;
+    top: -18px;
+    left:40%;
     z-index: -1;
 }
 .about-left{
@@ -2343,7 +2369,7 @@ footer hr {
     background-color: #F0F0F0;
 }
 .aboutvideo{
-    width: 85%;
+    width: 70%;
     padding: 10% 0;
     margin:0 auto; 
 }
@@ -2438,12 +2464,14 @@ footer hr {
       opacity: 1;
     }
 .counter {
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   margin: 0 auto;
   height: 20px;
   width: 60px;
   z-index: 2;
   text-align: center;
+  letter-spacing: 6px;
   color: #0C2340;
   line-height: 21px;
   font-size: 16px;
@@ -2503,10 +2531,10 @@ footer hr {
     position: relative;
     font-family: 'Spectral', serif;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 115px;
     color: #F0F0F0;
     width: 100%;
-    bottom: -90px;
+    bottom: -60px;
     opacity: 0;
     transform: translateY(50px);
 }
@@ -2519,9 +2547,9 @@ footer hr {
 }
 /*=========================food====================================*/
 .traffic h4{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     color: #0C2340;
     text-align: center;
 }
@@ -2539,12 +2567,13 @@ footer hr {
     color: #999;
 }
 .traffic-tab li{
+    font-size: 15px;
     display: inline-block;
     border-right: 1px solid #999;
     margin-bottom: 8px;
     width: 15%;
-    padding-right: 35px;
-    padding-left: 35px; 
+    padding-right: 28px;
+    padding-left: 28px; 
 }
 .traffic-tab li:last-child{
     border-right: 0px solid #999; 
@@ -2654,8 +2683,8 @@ footer hr {
 }
 .traffic-grey h4{
    text-align: center;
-   font-size: 20px;
-   letter-spacing: 4px;
+   font-size: 24px;
+   letter-spacing: 5px;
    color: #0C2340;
    font-weight: 400;
    margin-bottom: 120px;
@@ -2667,7 +2696,7 @@ footer hr {
    width: 24%;
     top:-78px;
     left:38%;
-   font-size: 18px;
+   font-size: 20px;
    letter-spacing: 4px;
    font-weight: 500;
    z-index: 1;
@@ -2729,20 +2758,24 @@ footer hr {
     color: #9B9B9B;
     font-size: 16px;
     line-height: 20px;
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-weight: 500;
 }
 .traffic-slide-txt h3{
-    font-size: 18px!important;
+    font-size: 20px!important;
     line-height: 26px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     padding: 15px 0;
     font-weight: 500;
 }
 .traffic-slide-txt p{
-    font-size: 14px!important;
+    font-size: 15px!important;
     line-height: 30px;
     letter-spacing: 2px;
     padding: 0px 0;
     font-weight: 400;
+    color: #666;
 }
 .traffic-slide-txt p a{
     color: #000!important;
@@ -2762,8 +2795,8 @@ footer hr {
 }
 .traffic-how h4 {
     text-align: center;
-    font-size: 20px;
-    letter-spacing: 4px;
+    font-size: 24px;
+    letter-spacing: 5px;
     color: #0C2340;
     font-weight: 400;
     margin-bottom: 70px;
@@ -2805,14 +2838,15 @@ footer hr {
     transform: translateY(0px);
 }
 .map-info h4{
-    font-size: 18px;
-    letter-spacing: 3px;
+    font-size: 24px;
+    letter-spacing: 5px;
 }
 .map-info p{
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 4px;
     margin-top: 30px;
     margin-bottom: 40px;
+    color: #666;
 }
 .map-info img{
     max-width: 134px;
@@ -2822,7 +2856,7 @@ footer hr {
 /*=========================Traffic detail====================================*/
 
 .accordion {
-  max-width: 560px;
+    width: 55%;
   margin: 0 auto 100px;
   border-top: 0px solid #C8C7C7;
 }
@@ -2833,7 +2867,7 @@ footer hr {
 .accordion li p {
   display: none;
   padding: 10px 25px 30px;
-  color: #4A4A4A;
+  color: #666;
 }
 .accordion a {
   width: 100%;
@@ -2842,7 +2876,7 @@ footer hr {
   font-weight: 600;
   line-height: 3;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 15px;
   text-indent: 15px;
   user-select: none;
 }
@@ -2860,8 +2894,7 @@ footer hr {
   transition: all 0.2s ease-in-out;
 }
 .accordion p {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 15px;
   line-height: 30px;
   padding: 10px;
   letter-spacing: 2px;
@@ -2922,22 +2955,22 @@ footer hr {
 }
 .facility-top h2{
     font-family: 'Spectral', serif;
-    font-weight: 700;
-    font-size: 54px; 
-    padding: 5px 0;
+    font-weight: 600;
+    font-size: 48px; 
+    padding: 0px 0;
 }
 .facility-top h4{
-    letter-spacing: 3.5px;
+    letter-spacing: 5px;
     font-size: 24px;
     padding-left: 3px;
     font-weight: 500;
-    color: #0C2340;
+    color: #000;
     margin-bottom: 16%;
 }
 .facility-top span{
     display: block;
     font-size: 20px;
-    color: #0C2340;
+    color: #000;
     letter-spacing: 4px;
     line-height: 32px;
     font-weight: 400;
@@ -2951,7 +2984,8 @@ footer hr {
     padding-top: 40px;
 }
 .facility-service-incon{
-    width:65%;
+    width:73%;
+    margin-left: 5%;
     text-align: center;
 }
 .icon-ul{
@@ -2988,7 +3022,8 @@ footer hr {
     display: inline-flex;
     flex-direction:column;
     justify-content:center;
-    max-width: 140px;
+    align-items: center;
+    max-width: 170px;
     margin-left:2%;
     position: relative;
     word-wrap: break-word;
@@ -2997,7 +3032,7 @@ footer hr {
     margin-top: 20px;
 }
 .facility-service-incon p{
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1.3px;
 }
 .service-img{
@@ -3022,7 +3057,7 @@ footer hr {
     color: #F0F0F0;
     position: absolute;
     top: -110px;
-    left: -60px;
+    left: -50px;
     z-index: -1;
 }
 /*==============facility gallery=================*/
@@ -3063,17 +3098,17 @@ footer hr {
 }
 .facility-gallery h2{
     font-family: 'Spectral', serif;
-    font-weight: 700;
-    font-size: 54px; 
+    font-weight: 600;
+    font-size: 48px; 
     padding: 5px 0;
 }
 .facility-gallery h4{
-    letter-spacing: 3.5px;
+    letter-spacing: 5px;
     font-size: 24px;
     padding-left: 3px;
     font-weight: 500;
-    color: #0C2340;
-    margin-bottom: 12%;
+    color: #000;
+    margin-bottom: 4%;
 }
 .facility-container-right{
    width: 60%;
@@ -3085,6 +3120,7 @@ footer hr {
 .facility-container-left{
    width: 100%;
    float: left;
+   max-width: 1440px;
 }
 .facility-nav {
    color: #000;
@@ -3167,10 +3203,10 @@ html[lang="en"] .facility-list li::before{
     display: inline-block;
     height: 45px;
     padding-bottom: 30px;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 3.5px;
     padding-left: 50px;
-    color: #9B9B9B;
+    color: #666;
     -webkit-transition: all .4s ease-out;
     -moz-transition: all .4s ease-out;
     -o-transition: all .4s ease-out;
@@ -3178,7 +3214,7 @@ html[lang="en"] .facility-list li::before{
 }
 .facility-list p:hover{
      cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     color: #0C2340!important;
     padding-left: 20px;
 }
@@ -3196,8 +3232,8 @@ html[lang="en"] .facility-list li::before{
     left: 0;
     padding-right: 16px;
     font-size: 50px;
-    line-height: 30px;
-    color: #9B9B9B;
+    line-height: 38px;
+    color: #666;
 }
 .facility-list p:hover:before{
     color: #0C2340!important;
@@ -3234,7 +3270,7 @@ ul.facility-nav li.current p::before{
     left: -20px;
 }
 ul.facility-nav li.current p{
-    font-size: 16px;
+    font-size: 20px;
     color: #0C2340!important;
     padding-left: 20px;
 }
@@ -3250,7 +3286,7 @@ ul.facility-nav li.current p{
     padding-bottom: 20px;
 }
 .reserv-intro p{
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 2px;
     padding: 0 10%;
     line-height: 30px;
@@ -3374,13 +3410,14 @@ ul.facility-nav li.current p{
 }
 .reserv-txt h4{
     display: block;
-    font-size: 20px;
+    font-size: 24px;
     color: #0C2340;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     line-height: 32px;
     font-weight: 400;
 }
 .reserv-txt p{
+    color: #666;
     font-size: 15px;
     letter-spacing: 2px;
     line-height: 30px;
@@ -3434,22 +3471,23 @@ ul.facility-nav li.current p{
 }
 .reserv-bottom-txt h4{
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     color: #0C2340;
     letter-spacing: 4px;
     line-height: 32px;
     font-weight: 500;
-    margin-bottom: 28px;
+    margin-bottom: 0px;
 }
 .reserv-bottom-txt li{
+    font-size: 15px;
     line-height: 30px;
     letter-spacing: 2px;
-    padding-top: 35px;
-    padding-bottom: 40px;
-    border-bottom: .5px solid rgba(151, 151 ,151 , .7);
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border-bottom: .5px solid rgba(151, 151 ,151 , .9);
 }
 .reserv-bottom-txt li:last-child{
-    border-bottom: 0px solid rgba(151, 151 ,151 , .7);
+    border-bottom: 0px solid rgba(151, 151 ,151 , .9);
     padding-bottom: 12px;
 }
 .creditcard{
@@ -3473,8 +3511,12 @@ ul.facility-nav li.current p{
 }
 .blackbg.inside-page-banner {
     height: 35vh;
-    margin-bottom: 0px;
+    margin-bottom: 4.5%;
     z-index: 1;
+}
+.blackbg.inside-page-banner h2{
+    padding-top: 12%;
+    padding-bottom: 10%;
 }
 .blackbg.inside-page-banner .overlay{
     display: none;
@@ -3508,9 +3550,9 @@ ul.facility-nav li.current p{
     transform: translateY(0px);
 }
 .reserv-detail-txt h4{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    letter-spacing: 2.5px;
+    letter-spacing: 4px;
     margin:30px auto;
 }
 .reserv-detail-txt ul{
@@ -3518,7 +3560,8 @@ ul.facility-nav li.current p{
 }
 .reserv-detail-txt li{
     display: inline-block;
-    width:40%;
+    font-size: 15px;
+    width:30%;
     border-right: 1px solid #999;
     padding: 10px 20px;
     line-height: 30px;
@@ -3549,6 +3592,12 @@ ul.facility-nav li.current p{
 }
 /*=========================Reserv detail====================================*/
 @media only screen and (max-width: 2560px) {
+    .food-bgtxt{
+    font-size: 185px;
+     }
+     .content2_txt {
+    top: 26%;
+     }
     .nav-container{
     padding-left: 0%;
     padding-right: 0%;
@@ -3575,29 +3624,35 @@ ul.facility-nav li.current p{
     .content2_pic {
     height: 980px;}
     .facility-img {
-    height: 800px;
+    height: 600px;
    }
    .prev-arrow {
-    left: 13.5%!important;
+    left: 21%!important;
     }
     .prev-arrow:hover {
-    left: 12.5%!important;
+    left: 20.5%!important;
     }
     .next-arrow {
-    right: 13.5%!important;}
+    right: 21%!important;}
     .next-arrow:hover{
-  right: 12.5%!important;   
+    right: 20.5%!important;   
 }
 
 }
 
 @media only screen and (max-width: 1990px) {
+    .food-bgtxt{
+    font-size: 145px;
+     }
     .nav-container{
     padding-left: 5%;
     padding-right: 5%;
     }
 }
 @media only screen and (max-width: 1440px) {
+    .food-bgtxt{
+    font-size: 115px;
+     }
     .nav-container{
     padding-left: 5%;
     padding-right: 5%;
@@ -3616,6 +3671,9 @@ ul.facility-nav li.current p{
     }
     .content2_pic {
     height: 580px;}
+    .content2_txt {
+    top: 16%;
+     }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -3971,6 +4029,10 @@ ul.facility-nav li.current p{
 }
 
 @media only screen and (max-width: 600px) {
+
+    .inside-page-banner {
+    margin-bottom: 40px;
+}
     html[lang="en"] .news-btn {
     font-size: 13px;
   } 
@@ -4017,6 +4079,7 @@ ul.facility-nav li.current p{
     margin:0 auto;
     top:16vh;
     }
+
     .section4 .container {
     width: 85%;
 }
@@ -4155,6 +4218,7 @@ ul.facility-nav li.current p{
     height: auto;
     }
     .content2 {
+    flex-direction: column;
     height: auto;
     overflow: hidden;
     }
@@ -4162,6 +4226,7 @@ ul.facility-nav li.current p{
         display: block;
         position: relative;
         width: 100%;
+        top: 0px;
     }
     .content2_txt h2, .content2_txt h4, .content2_txt p{
         padding: 10px 5%;
@@ -4223,6 +4288,12 @@ ul.facility-nav li.current p{
     .footer_icon img {
     margin-left: 0px;
     margin-right: 15px;
+    }
+    .about-left span {
+    left: 20%;
+    }
+    .about-right span {
+    left: 20%;
     }
     .about-content h4{
     padding-left: 0;
