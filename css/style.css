@@ -17,6 +17,7 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
+    -webkit-text-size-adjust: none;
 }
 
 * {
@@ -1548,7 +1549,7 @@ opacity: 1;
 }
 
 .the-arrow.-right>.shaft {
-    width: 64px;
+    width: 50px;
     transition-delay: 0.2s;
 }
 
@@ -1744,7 +1745,7 @@ opacity: 1;
 }
 
 .wthe-arrow.-right>.shaft {
-    width: 64px;
+    width: 50px;
     transition-delay: 0.2s;
 }
 
@@ -3784,11 +3785,13 @@ ul.facility-nav li.current p{
     float: left;
     width: 50%;
     line-height: 17px;
+    font-size: .8em;
      }
      .footer_copyright span:nth-child(2){
     float: right;
     width: 50%;
     text-align: right;
+    font-size: 1.15em;
     }
     footer {
     padding-bottom: 40px;
@@ -4051,9 +4054,15 @@ ul.facility-nav li.current p{
     .hamburger{
         top:22px;
     }
+    .accordion {
+    width: 100%;
+    }
     .light_Banner_container_table_cell h2{
         font-size: 40px;
         line-height: 50px;
+    }
+    .blackbg .light_Banner_container_table_cell h2{
+            margin-top: 80px;
     }
     .light_Banner_container_table_cell h3 img{
         padding-top: 30px;
@@ -4284,8 +4293,10 @@ ul.facility-nav li.current p{
         /* IE10 */
         display: flex;
         width: 100%;
+        font-size: 1.1em;
         justify-content:space-between;
     }
+    
     .footer_icon img {
     margin-left: 0px;
     margin-right: 15px;
