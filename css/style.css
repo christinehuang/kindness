@@ -514,6 +514,9 @@ html[lang="en"] .footer_copyright span:nth-child(1) {
     padding-left: 2%;
     padding-right: 2%;
 }
+.banner-subtitle {
+    font-weight: bold;
+}
 
 .overlay {
     background-color: #000;
@@ -901,7 +904,6 @@ opacity: 1;
 }
 
 .content2_pic {
-    display: inline-block;
     position: absolute;
     width: 68%;
     height: 580px;
@@ -3612,7 +3614,7 @@ ul.facility-nav li.current p{
     min-height: 350px;
    }
    .section4 .container {
-    max-width: 2560px;
+    max-width: 1480px;
    }
    .news-info_date_more {
     margin-top: 160px;
