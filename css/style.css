@@ -1462,6 +1462,7 @@ opacity: 1;
 .news-btn-right .btn-2{
     display: inline-block;
     margin-left: 8%;
+    margin-right: 0px;
 }
 .news-btn-right .btn-2 a .arrow-pre::after{
     content: '';
