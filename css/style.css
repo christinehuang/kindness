@@ -103,6 +103,8 @@ body {
 html[lang="en"] p, html[lang="en"] p a, html[lang="en"] span{
     letter-spacing: 0.5px!important;
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
 }
 html[lang="en"] h4, html[lang="en"] h5 {
     letter-spacing: 0.5px;
@@ -157,12 +159,16 @@ html[lang="en"] .content3_txt_container p {
 }
 html[lang="en"] .content2_txt p {
     text-align: left;
+    padding-top: 25px;
 }
 html[lang="en"] .content2_txt h4 {
     line-height: 25px;
+    font-size: 1.5em;
+    padding-top: 25px;
+    text-transform: uppercase;
 }
-html[lang="en"] .food-bgtxt {
-    font-family: 'Spectral', serif;
+html[lang="en"] .food-bgtxt span{
+    font-family: 'Spectral', serif!important;
 }
 html[lang="en"] .footer_title{
     display: none;
@@ -178,9 +184,13 @@ html[lang="en"] .btn-2 {
 }
 html[lang="en"] .about-left span{
     font-family: 'Spectral', serif;
+    font-size: 190px; 
+    line-height: 1.42857143;
 }
 html[lang="en"] .about-right span{
     font-family: 'Spectral', serif;
+    font-size: 190px; 
+    line-height: 1.42857143;
 }
 html[lang="en"] .about-right h4 {
     letter-spacing: 0.5px;
@@ -191,6 +201,89 @@ html[lang="en"] .footer_copyright span:nth-child(2){
 }
 html[lang="en"] .footer_copyright span:nth-child(1) {
     width: 100%;
+}
+html[lang="en"] .news-txt-left h4 {
+    font-size: 20px;
+}
+html[lang="en"] .news-info h3{
+   font-size: 20px;
+}
+html[lang="en"] .about-content p {
+    padding-top: 25px;
+    line-height: 26px;
+}
+html[lang="en"] .traffic h4 {
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+html[lang="en"] .reserv-txt h4 {
+    font-size: 21px;
+    font-weight: 500;
+}
+html[lang="en"] .reserv-detail-txt h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+html[lang="en"] .reserv-detail-txt li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+}
+html[lang="en"] .about-content h4 {
+    font-size: 21px;
+    font-weight: 500;
+}
+html[lang="en"] .facility-top span{
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 18px;
+}
+html[lang="en"] ul.facility-nav li.current p {
+    font-size: 17px;
+}
+html[lang="en"] .facility-list p {
+    line-height: 33px;
+}
+html[lang="en"] .traffic-tab li {
+    font-size: 14px;
+    width: auto;
+    letter-spacing: .5px;
+}
+html[lang="en"] .map-info h4 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+html[lang="en"] .traffic-grey h4 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+html[lang="en"] .map-info p {
+    font-size: 16px;
+}
+html[lang="en"] .traffic-where h5 {
+    font-size: 17px;
+}
+html[lang="en"] .accordion a {
+    font-size: 17px;
+    font-weight: 500;
+}
+html[lang="en"] .traffic-slide-txt h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+html[lang="en"] .traffic-slide-txt span {
+    font-family: 'Spectral', serif!important;
+}
+html[lang="en"] .news-txt-left p {
+    font-family: 'Spectral', serif;
+}
+html[lang="en"] .news-txt-left h4 {
+    font-size: 20px;
 }
 /*=========================lang en===========================*/
 
@@ -1150,6 +1243,7 @@ opacity: 1;
     line-height: 32px;
     margin-bottom: 25px;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .news-info p {
@@ -1380,6 +1474,7 @@ opacity: 1;
     display: flex;
     justify-content: space-between;
     padding:2% 4%;
+    margin-top: 50px;
 }
 .news-txt-left h4{
     font-size: 24px;
@@ -1936,7 +2031,7 @@ footer hr {
     display: inline-flex;
     height: 20px;
     color: #FFF;
-    padding-left: 5%;
+    padding-left: 15%;
     margin-top: 12px;
 }
 
@@ -2293,7 +2388,7 @@ footer hr {
     height: auto;
     min-height: 390px;
     margin-top:2%;
-    padding-bottom: 2%;
+    padding-bottom: 9%;
     margin-bottom: 0px; 
 }
 .about-txt{
@@ -2523,7 +2618,7 @@ footer hr {
 .about-txt h2{
     position: absolute;
     font-family: 'Spectral', serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 48px;
     left: 0;
     top:30px;
@@ -2535,7 +2630,7 @@ footer hr {
     transition: all 1s;
     position: relative;
     font-family: 'Spectral', serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 115px;
     color: #F0F0F0;
     width: 100%;
@@ -2608,6 +2703,7 @@ footer hr {
     width: 30%;
     margin-left: 3%;
     float: left;
+   align-items: center;
 }
 .hotel_list.hotel-list-three:nth-child(1), .hotel_list.hotel-list-three:nth-child(4), .hotel_list.hotel-list-three:nth-child(7) {
     margin-left: 0px;
@@ -2880,8 +2976,7 @@ footer hr {
   cursor: pointer;
   font-weight: 600;
   line-height: 3;
-  font-size: 14px;
-  font-size: 15px;
+  font-size: 20px;
   text-indent: 15px;
   user-select: none;
 }
@@ -2975,7 +3070,7 @@ footer hr {
 .facility-top span{
     display: block;
     font-size: 20px;
-    color: #000;
+    color: #0C2340;
     letter-spacing: 4px;
     line-height: 32px;
     font-weight: 400;
@@ -2986,7 +3081,7 @@ footer hr {
     line-height: 30px;
 }
 .facility-txt p{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .facility-service-incon{
     width:73%;
@@ -3207,6 +3302,7 @@ html[lang="en"] .facility-list li::before{
     position: relative;
     display: inline-block;
     height: 45px;
+    line-height: 30px;
     padding-bottom: 30px;
     font-size: 17px;
     letter-spacing: 3.5px;
@@ -3601,6 +3697,7 @@ ul.facility-nav li.current p{
     font-size: 185px;
      }
      .content2_txt {
+    width: 36%;
     top: 26%;
      }
     .nav-container{
@@ -3653,6 +3750,9 @@ ul.facility-nav li.current p{
     padding-left: 5%;
     padding-right: 5%;
     }
+    .light_Banner_container_table_cell span {
+    padding-left: 20%;
+    padding-right: 20%;}
 }
 @media only screen and (max-width: 1440px) {
     .food-bgtxt{
@@ -3678,7 +3778,13 @@ ul.facility-nav li.current p{
     height: 580px;}
     .content2_txt {
     top: 16%;
+     width: 50%;
      }
+    .light_Banner_container_table_cell span {
+    padding-left: 2%;
+    padding-right: 2%;}
+    .traffic-how {
+    margin-top: 10%;}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -3773,6 +3879,17 @@ ul.facility-nav li.current p{
    .facility-container-left{
      display: none;
    }
+   .hotel_list.hotel-list-three:nth-child(odd) {
+    margin-left: 0px;
+   }
+   .hotel_list.hotel-list-three:nth-child(even){
+    margin-left: 3%;
+   }
+   .hotel_list.hotel-list-three {
+    width: 48%;
+    margin-left: 3%;
+    float: left;
+  }
 }
 @media only screen and (max-width: 830px) {
     .news-banner.slider {
@@ -4037,6 +4154,12 @@ ul.facility-nav li.current p{
 
 @media only screen and (max-width: 600px) {
 
+   .hotel_list.hotel-list-three {
+    width: 100%;
+    margin-left: 0%!important;
+    float: left;
+    }
+
     .inside-page-banner {
     margin-bottom: 40px;
 }
@@ -4093,8 +4216,11 @@ ul.facility-nav li.current p{
     top:16vh;
     }
 
-    .section4 .container {
-    width: 85%;
+   .section4 .container {
+    width: 100%;
+   }
+.content2_txt h4 {
+    letter-spacing: 3.5px;
 }
     .content3 {
      flex-direction:column;
@@ -4364,6 +4490,15 @@ ul.facility-nav li.current p{
     .hotel_list {
     min-height: 406px;
     }
+    .hotel_list.hotel-list-three {
+     min-height: 290px;
+    }
+    .hotel_list.hotel-list-three .hotel-info a {
+    color: #FFF;
+    }
+    .hotel_list.hotel-list-three .hotel-info h3 {
+        padding-top: 20px;
+    }
     .hotel-info a{
         color: #4A4A4A;
     }
@@ -4384,7 +4519,7 @@ ul.facility-nav li.current p{
     z-index: 2;
     }
     .traffic-tab{
-        width: 100%;
+        width: 90%;
         overflow: hidden;
     }
     .traffic-tab li{
