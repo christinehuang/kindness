@@ -159,7 +159,7 @@ $(document).ready(function(){
     //build a scene
   var ourScene26 = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 0.8,
+      triggerHook: 0.9,
       reverse: true
   })
   .setClassToggle(this, 'fade-in') //add class to section1-pic
