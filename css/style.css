@@ -295,12 +295,37 @@ html[lang="en"] .footer_link a {
 }
 html[lang="en"] .reserv-bottom-txt li {
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: .5px;
 }
 html[lang="en"] .traffic-how h4 {
     font-size: 21px;
     font-weight: 400;
 }
-/*=========================lang en===========================*/
+html[lang="en"] .facility-top h2 {
+    margin-bottom: 45px;
+}
+html[lang="en"] .facility-service-incon li:nth-child(2) h3 {
+    left: 0px;
+}
+html[lang="en"] .facility-service-incon li:nth-child(3) h3 {
+    left: 0px;
+}
+html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(2) h3 {
+    left: 0px!important;
+}
+html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
+    left: 0px!important;
+}
+/*=======================lang en=============================*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+ .content2_pic{
+    display: block;
+ }
+}
+
+
+/*=========================IE===========================*/
 
 .light_menu {
     display: block;
@@ -967,11 +992,13 @@ opacity: 1;
 
 /*=========================index-content1===========================*/
 .content2 {
+    display: block;
     height: 580px;
     overflow: hidden;
 }
 
 .content2_txt {
+    display: block;
     width: 50%;
     position: absolute;
     left: 0;
@@ -1019,6 +1046,7 @@ opacity: 1;
 
 .content2_pic {
     position: absolute;
+    display: block;
     width: 68%;
     height: 580px;
     right: 0;
@@ -1040,14 +1068,11 @@ opacity: 1;
 }
 
 .overlay_light {
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 1) 14%, rgba(255, 255, 255, 0.93) 34%, rgba(255, 255, 255, 0.93) 35%, rgba(255, 255, 255, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 1) 14%, rgba(255, 255, 255, 0.93) 34%, rgba(255, 255, 255, 0.93) 35%, rgba(255, 255, 255, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 1) 14%, rgba(255, 255, 255, 0.93) 34%, rgba(255, 255, 255, 0.93) 35%, rgba(255, 255, 255, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
-    /* IE6-9 */
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+26,ffffff+100&1+0,0+38 */
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.32) 26%, rgba(255,255,255,0) 38%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.32) 26%,rgba(255,255,255,0) 38%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0.32) 26%,rgba(255,255,255,0) 38%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
     width: 100%;
     height: 100%;
     opacity: .9;
@@ -2494,8 +2519,14 @@ footer hr {
 }
 .aboutvideo{
     width: 70%;
+    height: 100%;
     padding: 10% 0;
     margin:0 auto; 
+}
+.aboutvideo iframe{
+        width: 100%;
+        height: 100%;
+        min-height: 720px;
 }
 /*=========================about===========================*/
 .pagination{
@@ -2738,6 +2769,7 @@ footer hr {
 .dark-overlay{
     position: absolute;
     top:0;
+    left: 0;
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -2764,12 +2796,15 @@ footer hr {
     z-index: 0;
 }
 .hotel-info {
-    /* position: relative; */
+    position: absolute; 
     letter-spacing: 3px;
-    padding-bottom: 30px;
-    /* bottom: 30px; */
+    bottom: 38px;
+    left: 0%; 
     z-index: 2;
     width: 100%;
+}
+.hotel_list.hotel-list-three .hotel-info{
+    bottom: 45%; 
 }
 .traffic-more{
     position: absolute;
@@ -2903,7 +2938,7 @@ footer hr {
     color: #666;
 }
 .traffic-slide-txt p a{
-    color: #000!important;
+    color: #666!important;
 }
 .traffic-how{
    width: 100%;
@@ -3011,7 +3046,7 @@ footer hr {
   position: absolute;
   right: 10px;
   content: " ";
-  top: 19px;
+  top: 29px;
   transform: rotate(90deg);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3031,7 +3066,7 @@ footer hr {
   position: absolute;
   right: 10px;
   content: " ";
-  top: 19px;
+  top: 29px;
   transform: rotate(180deg);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3147,17 +3182,23 @@ footer hr {
     flex-direction:column;
     justify-content:center;
     align-items: center;
+    width: 28%;
     max-width: 170px;
     margin-left:2%;
     position: relative;
-    word-wrap: break-word;
+    text-align: center;
 }
 .facility-service-incon span{
     margin-top: 20px;
 }
 .facility-service-incon p{
+    display: block;
     font-size: 15px;
     letter-spacing: 1.3px;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    width: 100%;
+    text-align: center;
 }
 .service-img{
     display: -webkit-flex;
@@ -3166,13 +3207,19 @@ footer hr {
     /* IE10 */
     display: flex;
    min-height: 100px;
-   max-width: 90px;
+   height: auto !important;
+   max-width: 100px;
+   width: 100%;
    margin:0 auto;
    align-items:flex-end;
    justify-content:center;
+   position: relative;
 }
 .service-img img{
     width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
 }
 
 .facility-service-incon h3{
@@ -3181,7 +3228,7 @@ footer hr {
     color: #F0F0F0;
     position: absolute;
     top: -110px;
-    left: -50px;
+    left: -20px;
     z-index: -1;
 }
 /*==============facility gallery=================*/
@@ -3283,6 +3330,13 @@ footer hr {
   from {opacity: 0; transform: scale(1.1);}
   to {opacity: 1; transform: scale(1);}
 }
+
+.facility-service-incon ul:nth-child(2) li:nth-child(2) img {
+ -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
 .facility-list ul{
     width: 100%;
 }
@@ -3612,7 +3666,10 @@ ul.facility-nav li.current p{
     border-bottom: .5px solid rgba(151, 151 ,151 , .9);
 }
 .reserv-bottom-txt li a{
-    color: #333;
+    color: #000;
+}
+.blackbg .reserv-bottom-txt li a{
+    color: #FFF;
 }
 .reserv-bottom-txt li:last-child{
     border-bottom: 0px solid rgba(151, 151 ,151 , .9);
@@ -4189,11 +4246,16 @@ ul.facility-nav li.current p{
     letter-spacing: 1.5px;
     padding: 0px 0;
     font-weight: 400;
-    color: #666;
+    color: #666!important;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    .aboutvideo iframe{
+        width: 100%;
+        height: 100%;
+        min-height: auto;
+}
 
    .hotel_list.hotel-list-three {
     width: 100%;
@@ -4563,7 +4625,9 @@ ul.facility-nav li.current p{
     }
     .aboutvideo {
     width: 70%;
+    height: 100%;
     padding: 70px 0;
+   
     }
     .traffic-city .hotel-list-three{
     width: 90%;
@@ -4664,6 +4728,11 @@ ul.facility-nav li.current p{
     .facility-gallery h4 {
     font-size: 20px;
     }
+    .facility-service-incon {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+   }
     .hotel-info h3{
         font-size: 18px;
         font-weight: 600;
@@ -4797,13 +4866,14 @@ ul.facility-nav li.current p{
     position: relative;
     width: 100%;
     height: 46vw;
-    margin-bottom: 75px;
+    margin-bottom: 105px;
     }
     .traffic-how h4 {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-size: 700;
     }
+    
     .traffic-slide .prev-arrow, .traffic-slide .prev-arrow:hover {
     left: -3%!important;
     }
@@ -4863,6 +4933,17 @@ ul.facility-nav li.current p{
     .facility-service-incon ul:nth-child(2) li:nth-child(3) h3{
     left: -34px!important;
     z-index: -1;
+    }
+    html[lang="en"] .facility-service-incon li {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    margin-left: 0%;
+    position: relative;
+    margin: 22% auto;
     }
 }
 
