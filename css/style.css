@@ -1281,6 +1281,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .news-info.white a{
     color: #FFF;
 }
+.news-info.white .more-arrow_container-w:hover .text{
+    color: #9B9B9B;
+}
 .news-info h3 {
     display: block;
     width: 100%;
