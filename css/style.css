@@ -1455,7 +1455,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .news-content{
     width: 78%;
-    max-width: 1290px;
+    max-width: 1150px;
     position: relative;
 }
 .news-counter{
@@ -1522,7 +1522,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     justify-content: space-between;
     padding:2% 4%;
     margin-top: 50px;
-    max-width: 1400px;
+    max-width: 1300px;
 }
 .news-txt-left h4{
     font-size: 24px;
@@ -3216,12 +3216,26 @@ footer hr {
    position: relative;
 }
 .service-img img{
-    width: 100%;
+    width: 90%;
     position: absolute;
     bottom: 0px;
-    left:0px;
+    left:5%;
 }
 
+.facility-service-incon ul:nth-child(2) li:nth-child(1) .service-img img, .facility-service-incon ul:nth-child(2) li:nth-child(3) .service-img img{
+    width: 80%;
+    position: absolute;
+    bottom: 0px;
+    left:11%;
+}
+.facility-service-incon ul:nth-child(2) li:nth-child(2) img {
+ -ms-transform: scale(1.28); /* IE 9 */
+  -webkit-transform: scale(1.28); /* Safari 3-8 */
+  transform: scale(1.28);
+}
+.facility-service-incon ul:nth-child(2) li:nth-child(3) h3{
+    left:-20px!important;
+}
 .facility-service-incon h3{
     font-family: 'Spectral', serif;
     font-size: 180px;
@@ -3331,11 +3345,7 @@ footer hr {
   to {opacity: 1; transform: scale(1);}
 }
 
-.facility-service-incon ul:nth-child(2) li:nth-child(2) img {
- -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2);
-}
+
 
 .facility-list ul{
     width: 100%;
@@ -3695,11 +3705,15 @@ ul.facility-nav li.current p{
   color: #FFF!important;
 }
 .blackbg.inside-page-banner {
+    position: relative;
     height: 35vh;
     margin-bottom: 4.5%;
     z-index: 1;
 }
 .blackbg.inside-page-banner h2{
+    display: block;
+    position: relative;
+    z-index: 99;
     padding-top: 12%;
     padding-bottom: 10%;
 }
@@ -3776,7 +3790,7 @@ ul.facility-nav li.current p{
    width: 48%;
 }
 /*=========================Reserv detail====================================*/
-@media only screen and (max-width: 2560px) {
+@media only screen and (max-width: 2565px) {
     .food-bgtxt{
     font-size: 185px;
      }
@@ -3822,7 +3836,11 @@ ul.facility-nav li.current p{
     right: 21%!important;}
     .next-arrow:hover{
     right: 20.5%!important;   
-}
+    }
+    .blackbg.inside-page-banner {
+    min-height: 540px;
+    z-index: 4;
+    }
 
 }
 
@@ -3837,6 +3855,10 @@ ul.facility-nav li.current p{
     .light_Banner_container_table_cell span {
     padding-left: 20%;
     padding-right: 20%;}
+    .blackbg.inside-page-banner {
+    min-height: 440px;
+    z-index: 4;
+    }
 }
 @media only screen and (max-width: 1450px) {
     .food-bgtxt{
@@ -4745,6 +4767,10 @@ ul.facility-nav li.current p{
     .hotel-info {
         margin-top: 30px;
         height: 120px;
+        bottom: 0px;
+    }
+    .hotel_list.hotel-list-three .hotel-info {
+    bottom: 25%;
     }
     .traffic-city .traffic-more {
     position: absolute;
@@ -4913,25 +4939,25 @@ ul.facility-nav li.current p{
     display: inline-flex;
     flex-direction:column;
     justify-content:center;
-    max-width: 100%;
+    width: 100%;
     margin-left: 0%;
     position: relative;
     margin:22% auto;
    }
    .facility-service-incon li:nth-child(2) h3{
-    left: -30px;
+    left: -12px;
     z-index: -1;
     }
     .facility-service-incon li:nth-child(3) h3{
-    left: -42px;
+    left: -14px;
     z-index: -1;
     }
     .facility-service-incon ul:nth-child(2) li:nth-child(2) h3{
-    left: -34px!important;
+    left: -16px!important;
     z-index: -1;
     }
     .facility-service-incon ul:nth-child(2) li:nth-child(3) h3{
-    left: -34px!important;
+    left: -16px!important;
     z-index: -1;
     }
     html[lang="en"] .facility-service-incon li {
