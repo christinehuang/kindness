@@ -3864,6 +3864,10 @@ ul.facility-nav li.current p{
     }
 }
 @media only screen and (max-width: 1450px) {
+     .blackbg.inside-page-banner {
+    min-height: 240px;
+    z-index: 4;
+}
     .food-bgtxt{
     font-size: 115px;
      }
@@ -3897,6 +3901,11 @@ ul.facility-nav li.current p{
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .blackbg.inside-page-banner {
+    min-height: 240px;
+    z-index: 4;
+}
     .light_menu {
         display: block;
         position: absolute;
@@ -4292,7 +4301,8 @@ ul.facility-nav li.current p{
     margin-bottom: 40px;
 }
     .blackbg.inside-page-banner {
-     height: 200px;
+        height: 190px;
+     min-height: 190px;
     }
     html[lang="en"] .news-btn {
     font-size: 13px;
@@ -4410,7 +4420,7 @@ ul.facility-nav li.current p{
         flex-direction: column;
     }
     .nav1200-right a::before {
-    margin-right: -8px;
+    margin-right: 0px;
    }
    html[lang="en"] .nav1200-right a::before {
     margin-right: 8px;
@@ -4498,6 +4508,8 @@ ul.facility-nav li.current p{
     content: '';
     width: 30px;
     height: 1px;
+    margin-right: 3px;
+    margin-bottom: 5px;
     background-color: #FFF;
     }
     .nav1200-right a:hover:before {
@@ -4974,6 +4986,14 @@ ul.facility-nav li.current p{
     position: relative;
     margin: 22% auto;
     }
+    .blackbg.inside-page-banner {
+        height: 200px;
+     min-height: 200px;
+    }
+    .blackbg .light_Banner_container_table.inside-banner {
+    height: 200px;
+    min-height: 200px;
+ }
 }
 
 @media only screen and (max-width: 320px) {
@@ -4987,6 +5007,7 @@ ul.facility-nav li.current p{
     height: auto;
     min-height: 310px;
    }
+
 }
 
 @media only screen and (max-width: 1000px) {
