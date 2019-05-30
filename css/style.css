@@ -170,7 +170,6 @@ html[lang="en"] .content2_txt h4 {
 }
 html[lang="en"] .food-bgtxt span{
     font-family: 'Spectral', serif!important;
-    font-size: 115px;
 }
 html[lang="en"] .footer_title{
     display: none;
@@ -633,7 +632,7 @@ html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
     color: #fff;
     text-transform: capitalize;
     font-size: 70px;
-    line-height: 125px;
+    line-height: 90px;
 }
 
 .light_Banner_container_table_cell h3 {
@@ -1262,9 +1261,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     width: 60%;
     max-height: 295px;
     color: #000;
-    border: .5px solid rgba(0, 0, 0, .3);
-    /*border: .5px solid rgba(255, 255, 255, .6);*/
-    /*border-left: 0px solid #000;*/
+    border: 1px solid rgba(0, 0, 0, .3);
     margin-left: -1px;
     padding: 40px 45px 35px 45px;
     -webkit-transition: all 1s;
@@ -1273,7 +1270,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     transition: all 1s;
 }
 .news-info.white {
-    border: .5px solid rgba(255, 255, 255, .6);
+    border: 1px solid rgba(255, 255, 255, .4);
 }
 .news-info a{
     color: #000;
@@ -2144,6 +2141,7 @@ footer hr {
     color: #666;
 }
 .footer_copyright span:nth-child(2){
+    font-family:'Noto Sans TC', 'Microsoft JhengHei','微軟正黑體', 'Heiti TC','Segoe UI',SegoeUI, sans-serif;
     float: right;
     font-size: 1.5em;
     letter-spacing: 3px;
@@ -2309,6 +2307,7 @@ footer hr {
     justify-content: center;
     align-items:center;
     width: 100%;
+    margin-top: 40px;
 }
 
 .nav1200-icons {
@@ -2321,7 +2320,7 @@ footer hr {
     justify-content: center;
     align-items:center;
     width: 100%;
-    margin-top: 330px;
+    margin-top: 295px;
 }
 .nav1200-icons a{
     margin-top: 0!important;
@@ -2805,6 +2804,9 @@ footer hr {
     left: 0%; 
     z-index: 2;
     width: 100%;
+}
+.hotel-info p{
+    margin-top: 6px;
 }
 .hotel_list.hotel-list-three .hotel-info{
     bottom: 45%; 
@@ -3676,7 +3678,7 @@ ul.facility-nav li.current p{
     letter-spacing: 2px;
     padding-top: 25px;
     padding-bottom: 30px;
-    border-bottom: .5px solid rgba(151, 151 ,151 , .9);
+    border-bottom: 1px solid rgba(151, 151 ,151 , .9);
 }
 .reserv-bottom-txt li a{
     color: #000;
@@ -3733,6 +3735,12 @@ ul.facility-nav li.current p{
    height: 35vh;
 }
 .reserv-banner{
+    display:-webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    flex-direction:column;
     width: 100%;
     padding:40px 0;
 }
@@ -3797,6 +3805,9 @@ ul.facility-nav li.current p{
     .food-bgtxt{
     font-size: 185px;
      }
+     html[lang="en"] .food-bgtxt span {
+    font-size: 185px;
+     }
      .content2_txt {
     width: 36%;
     top: 26%;
@@ -3841,29 +3852,61 @@ ul.facility-nav li.current p{
     right: 20.5%!important;   
     }
     .blackbg.inside-page-banner {
-    min-height: 540px;
+    height: 25vh;
+    min-height: 400px;
+    margin-bottom: 2%;
     z-index: 4;
     }
-
+    .blackbg.inside-page-banner h2 {
+    padding-top: 9%;
+     }
+   .news-info.white {
+    -webkit-border: 1px solid rgba(255, 255, 255, 0.4);
+   }
+   .reserv-detail-txt li {
+    display: inline-block;
+    font-size: 15px;
+    width: 20%;
+    }
 }
 
 @media only screen and (max-width: 1990px) {
     .food-bgtxt{
     font-size: 145px;
      }
+    html[lang="en"] .food-bgtxt span{
+    font-size: 145px;
+     }
     .nav-container{
     padding-left: 5%;
     padding-right: 5%;
     }
+    .blackbg.inside-page-banner h2 {
+    padding-top: 11%;
+     }
     .light_Banner_container_table_cell span {
     padding-left: 20%;
     padding-right: 20%;}
     .blackbg.inside-page-banner {
-    min-height: 440px;
+    min-height: 400px;
     z-index: 4;
+    }
+    .news-info.white {
+    -webkit-border: .5px solid rgba(255, 255, 255, 0.6);
+   }
+   .reserv-detail-txt li {
+    display: inline-block;
+    font-size: 15px;
+    width: 25%;
     }
 }
 @media only screen and (max-width: 1450px) {
+
+    .reserv-detail-txt li {
+    display: inline-block;
+    font-size: 15px;
+    width: 32%;
+    }
      .blackbg.inside-page-banner {
     min-height: 240px;
     z-index: 4;
@@ -4016,7 +4059,7 @@ ul.facility-nav li.current p{
     margin: 0px auto;
     }
     .mobile-nav {
-        height: 150vh;
+        height: 100vh;
         flex-direction: column;
     }
     .footer_copyright span:nth-child(1){
@@ -4053,6 +4096,7 @@ ul.facility-nav li.current p{
     }
 
     .nav1200-logo {
+        margin-top: 120px;
         margin-bottom: 30px;
     }
 
@@ -4125,12 +4169,12 @@ ul.facility-nav li.current p{
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    left: 10px!important;
+    left: 30px!important;
     padding: 22px;
     z-index: 50;   
     }
     .prev-arrow:hover{
-     left: 0px!important;
+     left: 20px!important;
     }
     .next-arrow{
      -webkit-transition: all 0.5s;
@@ -4138,10 +4182,10 @@ ul.facility-nav li.current p{
     -o-transition: all 0.5s;
     transition: all 0.5s;
     padding: 22px;
-    right: 10px!important;   
+    right: 30px!important;   
     }
     .next-arrow:hover{
-    right: 0px!important;   
+    right: 20px!important;   
     }
     .food-bgtxt{
     text-align: justify!important;
@@ -4169,20 +4213,25 @@ ul.facility-nav li.current p{
     }
     .reserv-right{
     width: 100%;
+    min-height: 210px;
     }
     .reserv-txt{
     padding-left: 0%;
     }
     .reserv-content{
     flex-direction:column;
-    margin-top:12%;
+    margin-top:85px;
+    }
+    .blackbg .reserv-content{
+    flex-direction:column;
+    margin-top:5px;
     }
     .reserv-content:nth-child(even) {
     flex-direction:column;
     }
     .reserv-content2{
    flex-direction:column;
-    margin-top:12%;
+    margin-top:85px;
     }
     .news-detail-txt {
     flex-direction: column;
@@ -4249,6 +4298,41 @@ ul.facility-nav li.current p{
     .news-banner .next-arrow:hover {
     right: -3%!important;
     }
+    .section4 .traffic {
+    width: 100%;
+    }
+    .hotel_list {
+    min-height: 446px;
+    margin-bottom: 5px;
+    }
+    .dark-overlay {
+    height: 306px;
+    }
+    .hotel-info {
+    margin-top: 30px;
+    height: 120px;
+    bottom: 0px;
+   }
+   .traffic-city .traffic-more {
+    position: absolute;
+    bottom: 155px;
+    right: 5px;
+   }
+   .hotel-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .hotel-info p {
+    font-size: 15px;
+    padding: 5% auto!important;
+}
+  .hotel-info a {
+    color: #4A4A4A;
+}
+.traffic-how {
+    margin-top: 20%;
+}
     .traffic-slide .slick-slide {
      margin: 0px 0px;
     }
@@ -4282,6 +4366,62 @@ ul.facility-nav li.current p{
     font-weight: 400;
     color: #666!important;
     }
+    .content2_txt {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    }
+   
+    .content2_txt h2, .content2_txt h4 {
+    padding: 0px 6%;
+    margin: 0 auto;
+    }
+    .content2_txt h2 {
+    font-size: 36px;
+    line-height: 40px;
+    }
+    .content2_txt p {
+    padding-bottom: 38px;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin: 0 auto;
+    }
+    .content2_pic {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 580px;
+   }
+   .content1_img_container_row {
+    margin-left: 6%;
+   }
+   .content1_img_container img {
+    width: 44%;
+    margin-right: 5%;
+    }
+    .content2 {
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    }
+    .content3 {
+    padding-top: 68px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    }
+    .content3_pic {
+    width: 100%;
+   }
+   .content3_txt {
+    width: 100%;
+    padding-top: 5%;
+   }
+   .content3_txt_container {
+    padding-left: 0;
+   }
 }
 
 @media only screen and (max-width: 600px) {
@@ -4290,11 +4430,37 @@ ul.facility-nav li.current p{
         height: 100%;
         min-height: auto;
 }
-
+.traffic-how {
+    margin-top: 10%;
+}
    .hotel_list.hotel-list-three {
     width: 100%;
     margin-left: 0%!important;
     float: left;
+    }
+
+    .prev-arrow{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 10px!important;
+    padding: 22px;
+    z-index: 50;   
+    }
+    .prev-arrow:hover{
+     left: 0px!important;
+    }
+    .next-arrow{
+     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 22px;
+    right: 10px!important;   
+    }
+    .next-arrow:hover{
+    right: 0px!important;   
     }
 
     .inside-page-banner {
