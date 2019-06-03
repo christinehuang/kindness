@@ -315,6 +315,9 @@ html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(2) h3 {
 html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
     left: 0px!important;
 }
+html[lang="en"] .light-lan a {
+    letter-spacing: 3px;
+}
 /*=======================lang en=============================*/
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -648,8 +651,8 @@ html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
     top: 28vh;
     line-height: 35px;
     letter-spacing: 3px;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 .banner-subtitle {
     font-weight: bold;
@@ -969,6 +972,7 @@ opacity: 1;
 .light_kbg {
     width: 25%;
     height: 130vh;
+    max-height: 1900px;
     display: inline-block;
     position: absolute;
     right: 0;
@@ -3801,6 +3805,77 @@ ul.facility-nav li.current p{
    width: 48%;
 }
 /*=========================Reserv detail====================================*/
+@media only screen and (max-width: 4565px) {
+    .food-bgtxt{
+    font-size: 185px;
+     }
+     html[lang="en"] .food-bgtxt span {
+    font-size: 185px;
+     }
+     .content2_txt {
+    width: 36%;
+    top: 26%;
+     }
+    .nav-container{
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    .news-info {
+    min-height: 350px;
+    }
+
+    .news-pic {
+    min-height: 350px;
+   }
+   .section4 .container {
+    max-width: 1480px;
+   }
+   .news-info_date_more {
+    margin-top: 160px;
+   }
+   .container2 {
+    max-width: 2560px;
+    }
+    .content2 {
+    height: 980px;
+    }
+    .content2_pic {
+    height: 980px;}
+    .facility-img {
+    height: 600px;
+   }
+   .prev-arrow {
+    left: 21%!important;
+    }
+    .prev-arrow:hover {
+    left: 20.5%!important;
+    }
+    .next-arrow {
+    right: 21%!important;}
+    .next-arrow:hover{
+    right: 20.5%!important;   
+    }
+    .blackbg.inside-page-banner {
+    height: 25vh;
+    min-height: 400px;
+    margin-bottom: 2%;
+    z-index: 4;
+    }
+    .blackbg.inside-page-banner h2 {
+    padding-top: 9%;
+     }
+   .news-info.white {
+    -webkit-border: 1px solid rgba(255, 255, 255, 0.4);
+   }
+   .reserv-detail-txt li {
+    display: inline-block;
+    font-size: 15px;
+    width: 20%;
+    }
+    .content2_txt h2 {
+        width: 60%;
+    }
+}
 @media only screen and (max-width: 2565px) {
     .food-bgtxt{
     font-size: 185px;
@@ -3868,6 +3943,9 @@ ul.facility-nav li.current p{
     font-size: 15px;
     width: 20%;
     }
+    .content2_txt h2 {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 1990px) {
@@ -3899,6 +3977,9 @@ ul.facility-nav li.current p{
     font-size: 15px;
     width: 25%;
     }
+    .content2_txt h2 {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 1450px) {
 
@@ -3914,6 +3995,9 @@ ul.facility-nav li.current p{
     .food-bgtxt{
     font-size: 115px;
      }
+     html[lang="en"] .food-bgtxt span {
+    font-size: 145px;
+}
     .nav-container{
     padding-left: 5%;
     padding-right: 5%;
@@ -4087,13 +4171,18 @@ ul.facility-nav li.current p{
         /* IE10 */
         display: flex;
         position: relative;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         margin: 10px auto;
         width: 100vw;
         height: 25vh;
         padding-top: 4%;
     }
+    .nav1200-lan {
+    display: block;
+    text-align: center;
+    margin-top: 0vh;
+   }
 
     .nav1200-logo {
         margin-top: 120px;
@@ -4164,6 +4253,10 @@ ul.facility-nav li.current p{
    .about-right{
     width: 100%;
     }
+    .about-txt{
+    padding-top: 100px;
+    margin-top: 0%;
+    }
     .prev-arrow{
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -4192,6 +4285,9 @@ ul.facility-nav li.current p{
     font-size: 90px;
     bottom: 20px;
     }
+     html[lang="en"] .food-bgtxt span {
+    font-size: 90px;
+    }
     .traffic-tab li{
     padding-left: 5px;
     padding-right: 5px;
@@ -4209,9 +4305,14 @@ ul.facility-nav li.current p{
    float: left;
    }
    .reserv-left{
+    display: block;
+    position: relative;
     width: 100%;
+    max-height: 370px;
     }
     .reserv-right{
+    display: block;
+    position: relative;
     width: 100%;
     min-height: 210px;
     }
