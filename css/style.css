@@ -971,7 +971,7 @@ opacity: 1;
 
 .light_kbg {
     width: 25%;
-    height: 130vh;
+    height: 105vh;
     max-height: 1900px;
     display: inline-block;
     position: absolute;
@@ -3978,7 +3978,7 @@ ul.facility-nav li.current p{
     width: 25%;
     }
     .content2_txt h2 {
-        width: 100%;
+        width: 80%;
     }
 }
 @media only screen and (max-width: 1450px) {
@@ -3996,7 +3996,7 @@ ul.facility-nav li.current p{
     font-size: 115px;
      }
      html[lang="en"] .food-bgtxt span {
-    font-size: 145px;
+    font-size: 115px;
 }
     .nav-container{
     padding-left: 5%;
@@ -4018,7 +4018,7 @@ ul.facility-nav li.current p{
     height: 580px;}
     .content2_txt {
     top: 16%;
-     width: 50%;
+     width: 44%;
      }
     .light_Banner_container_table_cell span {
     padding-left: 2%;
@@ -4084,6 +4084,10 @@ ul.facility-nav li.current p{
     opacity: 0;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    }
+    .content2_txt {
+    top: 16%;
+    width: 53%;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -4203,6 +4207,7 @@ ul.facility-nav li.current p{
         justify-content: center;
         width: 100vw;
         height: auto;
+        padding-top: 55px;
         padding-bottom: 190px;
     }
 
@@ -4212,7 +4217,7 @@ ul.facility-nav li.current p{
         text-align: center;
         width: 100vw;
         margin: 0 auto;
-        bottom: 10%;
+        bottom: 8%;
         z-index: 88;
     }
 
@@ -4306,22 +4311,30 @@ ul.facility-nav li.current p{
    }
    .reserv-left{
     display: block;
-    position: relative;
+    position: absolute;
     width: 100%;
-    max-height: 370px;
+    height: auto;
+    min-height: 370px;
+    top: 0px;
+    float: none;
     }
     .reserv-right{
     display: block;
-    position: relative;
+    position: absolute;
+    top: 390px;
+    height: auto;
     width: 100%;
     min-height: 210px;
+    float: none;
     }
     .reserv-txt{
     padding-left: 0%;
     }
     .reserv-content{
+    position: relative;
     flex-direction:column;
     margin-top:85px;
+    min-height: 580px;
     }
     .blackbg .reserv-content{
     flex-direction:column;
@@ -4479,6 +4492,7 @@ ul.facility-nav li.current p{
     margin: 0 auto;
     }
     .content2_txt h2 {
+    width: 100%;
     font-size: 36px;
     line-height: 40px;
     }
@@ -4741,6 +4755,7 @@ ul.facility-nav li.current p{
         justify-content: center;
         width: 100vw;
         height: 60vh;
+        padding-top: 0px;
         padding-bottom: 5px;
     }
 
@@ -5090,6 +5105,7 @@ ul.facility-nav li.current p{
    .reserv-content {
     margin-top: 2%;
     margin-bottom: 12%;
+    min-height: 480px;
     }
     .reserv-intro p {
     font-size: 15px;
@@ -5098,6 +5114,7 @@ ul.facility-nav li.current p{
     .reserv-content2 {
     margin-top: 13%;
     margin-bottom: 12%;
+    min-height: 480px;
     }
    .reserv-btn {
     flex-direction: column;
@@ -5118,10 +5135,22 @@ ul.facility-nav li.current p{
    .reserv-btn .btn {
     margin: 0px auto;
     }
+    .reserv-left {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    top: 0px;
+    }
     .reserv-right {
+    position: relative;
     width: 85%;
     margin: 0px 7.5%;
     float: none;
+    top: 110px;
+    height: auto;
+    min-height: auto;
     }
     .reserv-txt p {
     padding-top: 20px;
@@ -5264,6 +5293,15 @@ ul.facility-nav li.current p{
 }
 
 @media only screen and (max-width: 320px) {
+    .reserv-right {
+    position: relative;
+    width: 85%;
+    margin: 0px 7.5%;
+    float: none;
+    top: 70px;
+    height: auto;
+    min-height: auto;
+    }
    .food-bgtxt{
     letter-spacing: -3.4px;
     }
