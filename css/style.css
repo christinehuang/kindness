@@ -3877,6 +3877,11 @@ ul.facility-nav li.current p{
     }
 }
 @media only screen and (max-width: 2565px) {
+    .light_kbg {
+    width: 25%;
+    height: 124vh;
+    min-height: 1550px;
+   }
     .food-bgtxt{
     font-size: 185px;
      }
@@ -3949,6 +3954,12 @@ ul.facility-nav li.current p{
 }
 
 @media only screen and (max-width: 1990px) {
+      .light_kbg {
+    width: 23.5%;
+    height: 115vh;
+    max-height: 1240px;
+    min-height: 1170px;
+   }
     .food-bgtxt{
     font-size: 145px;
      }
@@ -3982,6 +3993,13 @@ ul.facility-nav li.current p{
     }
 }
 @media only screen and (max-width: 1450px) {
+
+    .light_kbg {
+    width: 23.5%;
+    height: 124vh;
+    max-height: 928px;
+    min-height: 820px;
+   }
 
     .reserv-detail-txt li {
     display: inline-block;
@@ -4028,6 +4046,17 @@ ul.facility-nav li.current p{
 }
 
 @media only screen and (max-width: 1200px) {
+
+ .light_kbg {
+    width: 25%;
+    height: 106vh;
+    max-height: 880px;
+    min-height: 720px;
+   }
+   .content1 {
+    display: table;
+    height: 690px;
+  }
 
     .blackbg.inside-page-banner {
     min-height: 240px;
