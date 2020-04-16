@@ -4,8 +4,8 @@ google.maps.event.addDomListener(window, 'load', init);
 function init() {
 
     var mapOptions = {
-        zoom: 15,
-        center: new google.maps.LatLng(22.657937, 120.285922),
+        zoom: 17,
+        center: new google.maps.LatLng(22.997891, 120.187385),
         disableDefaultUI: true,
         styles: [{
                 "featureType": "water",
@@ -173,13 +173,13 @@ function init() {
 
     var mapElement = document.getElementById('map');
     var image = {
-    url: 'http://pgnini.org/kindness-test/images/map-icon-60.svg',
+    url: 'http://pgnini.org/kindness/map-icon-60.svg',
     scaledSize: new google.maps.Size(140, 200),
      }
     var map = new google.maps.Map(mapElement, mapOptions);
 
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(22.657937, 120.285922),
+        position: new google.maps.LatLng(22.997891, 120.187385),
         map: map,
         optimized: false,
         icon: image

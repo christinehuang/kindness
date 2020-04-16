@@ -318,6 +318,11 @@ html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
 html[lang="en"] .light-lan a {
     letter-spacing: 3px;
 }
+@media only screen and (max-width: 1024px) {
+html[lang="en"] .content3 {
+        padding-top: 220px;
+    }
+}
 /*=======================lang en=============================*/
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -996,8 +1001,9 @@ opacity: 1;
 /*=========================index-content1===========================*/
 .content2 {
     display: block;
-    height: 580px;
-    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4%;
 }
 
 .content2_txt {
@@ -1051,7 +1057,9 @@ opacity: 1;
     position: absolute;
     display: block;
     width: 68%;
-    height: 580px;
+    height: auto;
+    min-height: 580px;
+    overflow: hidden;
     right: 0;
     opacity: 0;
     transform: translateY(50px);
@@ -1078,6 +1086,7 @@ background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0.
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
     width: 100%;
     height: 100%;
+    min-height: 580px;
     opacity: .9;
     position: absolute;
     right: 0;
@@ -4033,10 +4042,13 @@ ul.facility-nav li.current p{
     margin-top: 50px;
    }
     .content2 {
-    height: 580px;
+    height: 100%;
+    min-height: 580px;
     }
     .content2_pic {
-    height: 580px;}
+    height: 100%;
+    min-height: 580px;
+    }
     .content2_txt {
     top: 16%;
      width: 44%;
